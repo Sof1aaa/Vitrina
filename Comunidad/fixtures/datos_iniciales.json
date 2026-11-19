@@ -1,0 +1,124 @@
+[
+{
+  "model": "Comunidad.pais",
+  "pk": "1",
+  "fields": {
+    "nombre_pais": "Estados Unidos"
+  }
+},
+{
+  "model": "Comunidad.pais",
+  "pk": "51",
+  "fields": {
+    "nombre_pais": "Perú"
+  }
+},
+{
+  "model": "Comunidad.pais",
+  "pk": "52",
+  "fields": {
+    "nombre_pais": "México"
+  }
+},
+{
+  "model": "Comunidad.pais",
+  "pk": "54",
+  "fields": {
+    "nombre_pais": "Argentina"
+  }
+},
+{
+  "model": "Comunidad.pais",
+  "pk": "55",
+  "fields": {
+    "nombre_pais": "Brasil"
+  }
+},
+{
+  "model": "Comunidad.pais",
+  "pk": "56",
+  "fields": {
+    "nombre_pais": "Chile"
+  }
+},
+{
+  "model": "Comunidad.pais",
+  "pk": "57",
+  "fields": {
+    "nombre_pais": "Colombia"
+  }
+},
+{
+  "model": "Comunidad.pais",
+  "pk": "59",
+  "fields": {
+    "nombre_pais": "Ecuador"
+  }
+},
+{
+  "model": "Comunidad.pais",
+  "pk": "91",
+  "fields": {
+    "nombre_pais": "Bolivia"
+  }
+},
+{
+  "model": "Comunidad.categoriainiciativa",
+  "pk": "1",
+  "fields": {
+    "nombre_categoria": "Clubes de Programación",
+    "descripcion_categoria": "Espacios extracurriculares gratuitos para chicas que desean aprender sobre videojuegos, apps móviles"
+  }
+},
+{
+  "model": "Comunidad.categoriainiciativa",
+  "pk": "2",
+  "fields": {
+    "nombre_categoria": "Talleres/Hackatones",
+    "descripcion_categoria": "Competencias de resolución de problemas tecnológicos"
+  }
+},
+{
+  "model": "Comunidad.categoriainiciativa",
+  "pk": "3",
+  "fields": {
+    "nombre_categoria": "Grupos de Estudio",
+    "descripcion_categoria": "Espacios para adquirir habilidades adicionales a las vistas en clases(lenguajes de programación,BD)"
+  }
+},
+{
+  "model": "Comunidad.categoriainiciativa",
+  "pk": "4",
+  "fields": {
+    "nombre_categoria": "Networking",
+    "descripcion_categoria": "Agrupaciones que organicen encuentros y talleres técnicos con profesionales de la industria"
+  }
+},
+{
+  "model": "Comunidad.categoriainiciativa",
+  "pk": "5",
+  "fields": {
+    "nombre_categoria": "Campamentos de Verano",
+    "descripcion_categoria": "Programas intensivos en vacaciones para explorar IA, ciberseguridad, etc"
+  }
+},
+{
+  "model": "Comunidad.categoriainiciativa",
+  "pk": "6",
+  "fields": {
+    "nombre_categoria": "Bootcamps",
+    "descripcion_categoria": "Programas de corta duración para fortalecer competencias y tasa de empleabilidad"
+  }
+},
+{
+  "model": "Comunidad.miembro",
+  "pk": "985",
+  "fields": {
+    "nombre_miembro": "Violeta Parra",
+    "ocupacion_cargo_miembro": "Estudiante",
+    "info_miembro": "Estudiante de la IU Pascual Bravo, actualmente está en 5° semestre del Programa Tecnología en Desarrollo de Software",
+    "foto_miembro": "miembros/pepin_hermoso.jpeg",
+    "correo_miembro": "violta985@pascualbravo.edu.co"
+  }
+}
+]

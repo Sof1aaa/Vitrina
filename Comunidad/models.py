@@ -23,7 +23,10 @@ class Miembro(models.Model):
     nombre_miembro = models.CharField(max_length=100)
     ocupacion_cargo_miembro = models.CharField(max_length=100)
     info_miembro = models.TextField()
-    foto_miembro = models.CharField(max_length=200)
+    foto_miembro = models.ImageField(
+        upload_to='miembros/', 
+        blank=True, 
+        null=True)
     correo_miembro = models.CharField(max_length=200)
 
     def __str__(self):
@@ -47,7 +50,10 @@ class Iniciativa(models.Model):
     fecha_inicio_iniciativa = models.DateField()
     universidad_origen_iniciativa = models.CharField(max_length=100)
     numero_miembros_iniciativa = models.IntegerField()
-    logo_iniciativa = models.CharField(max_length=200)
+    logo_iniciativa = models.ImageField(
+        upload_to='logos_iniciativas/', 
+        blank=True, 
+        null=True)
     sitio_web_iniciativa = models.CharField(max_length=200)
     email_contacto_iniciativa = models.EmailField()
     id_categoria = models.ForeignKey(CategoriaIniciativa, on_delete=models.CASCADE)
@@ -90,7 +96,10 @@ class RedSocial(models.Model):
 
 class GaleriaEvento(models.Model):
     id_galeria = models.CharField(max_length=10, primary_key=True)
-    imagen_galeria = models.CharField(max_length=200)
+    imagen_galeria = models.ImageField(
+        upload_to='galeria/', 
+        blank=True, 
+        null=True)
     descripcion_galeria = models.CharField(max_length=100)
     id_evento = models.ForeignKey(Evento, on_delete=models.CASCADE)
 
