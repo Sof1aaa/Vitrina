@@ -130,6 +130,7 @@ class Migration(migrations.Migration):
                 ('direccion_ubicacion', models.CharField(max_length=100)),
                 ('id_ciudad', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='Comunidad.ciudad')),
                 ('id_iniciativa', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='Comunidad.iniciativa')),
+                
             ],
         ),
     ]
