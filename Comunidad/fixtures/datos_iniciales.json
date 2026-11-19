@@ -10,14 +10,14 @@
   "model": "Comunidad.pais",
   "pk": "51",
   "fields": {
-    "nombre_pais": "Perú"
+    "nombre_pais": "PerÃº"
   }
 },
 {
   "model": "Comunidad.pais",
   "pk": "52",
   "fields": {
-    "nombre_pais": "México"
+    "nombre_pais": "MÃ©xico"
   }
 },
 {
@@ -66,8 +66,8 @@
   "model": "Comunidad.categoriainiciativa",
   "pk": "1",
   "fields": {
-    "nombre_categoria": "Clubes de Programación",
-    "descripcion_categoria": "Espacios extracurriculares gratuitos para chicas que desean aprender sobre videojuegos, apps móviles"
+    "nombre_categoria": "Clubes de ProgramaciÃ³n",
+    "descripcion_categoria": "Espacios extracurriculares gratuitos para chicas que desean aprender sobre videojuegos, apps mÃ³viles"
   }
 },
 {
@@ -75,7 +75,7 @@
   "pk": "2",
   "fields": {
     "nombre_categoria": "Talleres/Hackatones",
-    "descripcion_categoria": "Competencias de resolución de problemas tecnológicos"
+    "descripcion_categoria": "Competencias de resoluciÃ³n de problemas tecnolÃ³gicos"
   }
 },
 {
@@ -83,7 +83,7 @@
   "pk": "3",
   "fields": {
     "nombre_categoria": "Grupos de Estudio",
-    "descripcion_categoria": "Espacios para adquirir habilidades adicionales a las vistas en clases(lenguajes de programación,BD)"
+    "descripcion_categoria": "Espacios para adquirir habilidades adicionales a las vistas en clases(lenguajes de programaciÃ³n,BD)"
   }
 },
 {
@@ -91,7 +91,7 @@
   "pk": "4",
   "fields": {
     "nombre_categoria": "Networking",
-    "descripcion_categoria": "Agrupaciones que organicen encuentros y talleres técnicos con profesionales de la industria"
+    "descripcion_categoria": "Agrupaciones que organicen encuentros y talleres tÃ©cnicos con profesionales de la industria"
   }
 },
 {
@@ -107,7 +107,7 @@
   "pk": "6",
   "fields": {
     "nombre_categoria": "Bootcamps",
-    "descripcion_categoria": "Programas de corta duración para fortalecer competencias y tasa de empleabilidad"
+    "descripcion_categoria": "Programas de corta duraciÃ³n para fortalecer competencias y tasa de empleabilidad"
   }
 },
 {
@@ -116,7 +116,7 @@
   "fields": {
     "nombre_miembro": "Violeta Parra",
     "ocupacion_cargo_miembro": "Estudiante",
-    "info_miembro": "Estudiante de la IU Pascual Bravo, actualmente está en 5° semestre del Programa Tecnología en Desarrollo de Software",
+    "info_miembro": "Estudiante de la IU Pascual Bravo, actualmente estÃ¡ en 5Â° semestre del Programa TecnologÃ­a en Desarrollo de Software",
     "foto_miembro": "miembros/pepin_hermoso.jpeg",
     "correo_miembro": "violta985@pascualbravo.edu.co"
   }
