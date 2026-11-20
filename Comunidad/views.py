@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from Comunidad.models import Pais, CategoriaIniciativa, Miembro, Ciudad
+from Comunidad.models import Evento, Iniciativa, Pais, CategoriaIniciativa, Miembro, Ciudad, RedSocial, Sede
 
 # Create your views here.
 def listadoPaises(request):
@@ -18,3 +18,19 @@ def listadoMiembros(request):
 def listadoCiudades(request):
     ciudades = Ciudad.objects.select_related('id_pais')
     return render(request, 'Ciudades/listado_ciudades.html', {'ciudades': ciudades})
+
+def listadoSedes(request):
+    sedes = Sede.objects.all()
+    return render(request, 'Sedes/listado_sedes.html', {'sedes': sedes})
+
+def listadoEventos(request):
+    eventos = Evento.objects.all()
+    return render(request, 'Eventos/listado_eventos.html', {'eventos': eventos})
+
+def listadoRedesSociales(request):
+    redes_sociales = RedSocial.objects.all()
+    return render(request, 'RedesSociales/listado_red_social.html', {'redes_sociales': redes_sociales})
+
+def listadoIniciativas(request):
+    iniciativas = Iniciativa.objects.all()
+    return render(request, 'Iniciativas/listado_iniciativas.html', {'iniciativas': iniciativas})
