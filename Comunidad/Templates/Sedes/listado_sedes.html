@@ -1,0 +1,47 @@
+{% extends 'Components/navbar.html' %}
+
+{% block title %} Listado de Sedes {% endblock %}
+
+
+{% block content %}
+<h1>Listado de Sedes</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Iniciativa</th>
+            <th scope="col">Ciudad</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Link GoogleMaps</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Dirección</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        {% for s in sedes %}
+
+        <tr>
+            <th scope="row">{{s.id_sede}}</th>
+            <td>{{s.id_iniciativa.nombre_iniciativa}}</td>
+            <td>{{s.id_ciudad.nombre_ciudad}}</td>
+            <td>{{s.nombre_sede}}</td>
+            <td>{{s.link_maps_sede}}</td>
+            <td>{{s.telefono_sede}}</td>
+            <td>{{s.direccion_ubicacion}}</td>
+            <td>
+                <a href="" type="button" class="btn btn-light btn-sm border">Editar</a>
+                <a href="" type="button" class="btn btn-light btn-sm border">Eliminar</a>
+            </td>
+        </tr>
+        {% empty %}
+            <tr>
+                <td colspan="7" class="text-center">
+                    No hay sedes registradas
+                </td>
+            </tr>
+        {% endfor%}
+    </tbody>
+</table>
+
+{% endblock %}
