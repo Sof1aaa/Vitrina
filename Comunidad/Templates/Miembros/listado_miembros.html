@@ -1,0 +1,50 @@
+{% extends 'Components/navbar.html' %}
+
+{% block title %} Listado de Miembros {% endblock %}
+
+
+{% block content %}
+<h1>Listado de Miembros</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Ocupación/Cargo</th>
+            <th scope="col">Info</th>
+            <th scope="col">Foto</th>
+            <th scope="col">Correo</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for m in miembros %}
+
+        <tr>
+            <th scope="row">{{m.id_miembro}}</th>
+            <td>{{m.nombre_miembro}}</td>
+            <td>{{m.ocupacion_cargo_miembro}}</td>
+            <td>{{m.info_miembro}}</td>
+            <td>
+                {% if m.foto_miembro %}
+                    <img src="{{m.foto_miembro.url}}" alt="", width="100">
+                {% else %}
+                    Sin imagen 
+                {% endif %}
+            </td>
+            <td>{{m.correo_miembro}}</td>
+            <td>
+                <a href="" type="button" class="btn btn-light btn-sm border">Editar</a>
+                <a href="" type="button" class="btn btn-light btn-sm border">Eliminar</a>
+            </td>
+        </tr>
+        {% empty %}
+            <tr>
+                <td colspan="5" class="text-center">
+                    No hay miembros registrados
+                </td>
+            </tr>
+        {% endfor%}
+    </tbody>
+</table>
+
+{% endblock %}

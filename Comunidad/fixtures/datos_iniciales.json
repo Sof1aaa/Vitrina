@@ -112,13 +112,162 @@
 },
 {
   "model": "Comunidad.miembro",
+  "pk": "148",
+  "fields": {
+    "nombre_miembro": "Gloria Lopera",
+    "ocupacion_cargo_miembro": "Docente",
+    "info_miembro": "Gloria es docente de la UDEA y lidera la iniciativa CodeWoman",
+    "foto_miembro": "miembros/gloria_lopera_RHBWrHv.png",
+    "correo_miembro": "glorlop148@gmail.com"
+  }
+},
+{
+  "model": "Comunidad.miembro",
+  "pk": "237",
+  "fields": {
+    "nombre_miembro": "Lucía Palacio",
+    "ocupacion_cargo_miembro": "Estudiante",
+    "info_miembro": "Lucía es estudiante de 10° semestre de la carrera de Ingeniería Informática de la Universidad Nacional. Pertenece a la iniciativa IAFEM",
+    "foto_miembro": "miembros/lucia_palacio_pbWhgwQ.png",
+    "correo_miembro": "lucpal237@gmail.com"
+  }
+},
+{
+  "model": "Comunidad.miembro",
+  "pk": "382",
+  "fields": {
+    "nombre_miembro": "Alejandra Ospina",
+    "ocupacion_cargo_miembro": "Patrocinadora",
+    "info_miembro": "Alejandra lleva 5 años dirigiendo su propia empresa y brindando apoyo económico a la Sociedad Colombiana de Computación",
+    "foto_miembro": "miembros/alejandra_ospina_FjfpqCV.png",
+    "correo_miembro": "aleja382@gmail.com"
+  }
+},
+{
+  "model": "Comunidad.miembro",
+  "pk": "460",
+  "fields": {
+    "nombre_miembro": "Paulina Sepúlveda",
+    "ocupacion_cargo_miembro": "Co-Organizadora",
+    "info_miembro": "Paulina ha hecho parte del evento 20CCC y de todas sus versiones anteriores desempeñando funciones de gestión y alianzas",
+    "foto_miembro": "miembros/paulina_sepulveda_lsTyDAA.png",
+    "correo_miembro": "pausep460@gmail.com"
+  }
+},
+{
+  "model": "Comunidad.miembro",
+  "pk": "587",
+  "fields": {
+    "nombre_miembro": "Ana Rojas",
+    "ocupacion_cargo_miembro": "Directora",
+    "info_miembro": "Ana es directora del evento Ellas Transforman, que surgió del POLI",
+    "foto_miembro": "miembros/ana_rojas_xlvPSFc.png",
+    "correo_miembro": "anaro587@gmail.com"
+  }
+},
+{
+  "model": "Comunidad.miembro",
+  "pk": "668",
+  "fields": {
+    "nombre_miembro": "Alicia Vasquez",
+    "ocupacion_cargo_miembro": "Ponente",
+    "info_miembro": "Joven de 20 años que ha realizado diversas ponencias en base a su programa académico Ingeniería de software. Hace parte del grupo de estudio Softgirls de la IU Pascual Bravo",
+    "foto_miembro": "miembros/alicia_vasquez_FAj6qVI.jpg",
+    "correo_miembro": "alicvas668@gmail.com"
+  }
+},
+{
+  "model": "Comunidad.miembro",
+  "pk": "861",
+  "fields": {
+    "nombre_miembro": "Dana Garcés",
+    "ocupacion_cargo_miembro": "Estudiante",
+    "info_miembro": "Dana, es una estudiante de 7° semestre de la carrera de Ingeniería de Sistemas de la Universidad de Medellín. Hace parte del grupo JUMI",
+    "foto_miembro": "miembros/dana_garces_ELvNKUe.png",
+    "correo_miembro": "dangar861@gmail.com"
+  }
+},
+{
+  "model": "Comunidad.miembro",
   "pk": "985",
   "fields": {
     "nombre_miembro": "Violeta Parra",
     "ocupacion_cargo_miembro": "Estudiante",
-    "info_miembro": "Estudiante de la IU Pascual Bravo, actualmente está en 5° semestre del Programa Tecnología en Desarrollo de Software",
-    "foto_miembro": "miembros/pepin_hermoso.jpeg",
-    "correo_miembro": "violta985@pascualbravo.edu.co"
+    "info_miembro": "Estudiante de la IU Pascual Bravo, actualmente está en 5° semestre del Programa Tecnología en Desarrollo de Software. Hace parte de la iniciativa Softgirls",
+    "foto_miembro": "miembros/violeta_parra_t2cSQfa.jpg",
+    "correo_miembro": "violta985@gmail.com"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "11",
+  "fields": {
+    "nombre_ciudad": "Buenos Aires",
+    "id_pais": "54"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "2",
+  "fields": {
+    "nombre_ciudad": "La Paz",
+    "id_pais": "91"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "202",
+  "fields": {
+    "nombre_ciudad": "Washington",
+    "id_pais": "1"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "511",
+  "fields": {
+    "nombre_ciudad": "Lima",
+    "id_pais": "51"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "52",
+  "fields": {
+    "nombre_ciudad": "Santiago de Chile",
+    "id_pais": "56"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "55",
+  "fields": {
+    "nombre_ciudad": "Ciudad de Mexico",
+    "id_pais": "52"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "604",
+  "fields": {
+    "nombre_ciudad": "Medellín",
+    "id_pais": "57"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "61",
+  "fields": {
+    "nombre_ciudad": "Brasilia",
+    "id_pais": "55"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "93",
+  "fields": {
+    "nombre_ciudad": "Quito",
+    "id_pais": "59"
   }
 }
 ]
