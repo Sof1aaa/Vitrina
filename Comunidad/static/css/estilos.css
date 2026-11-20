@@ -1,0 +1,195 @@
+/* =========================================================
+   TEMA MORADO - VITRINAS DE COMUNIDADES DE MUJERES STEM
+   Compatible con Bootstrap 6.0.0-alpha.1
+   ========================================================= */
+
+:root {
+    --morado-oscuro: #3b0764;
+    --morado-principal: #6b21a8;
+    --morado-medio: #8b5cf6;
+    --morado-suave: #f3e8ff;
+    --morado-fondo: #faf5ff;
+    --morado-borde: #e9d5ff;
+    --texto-oscuro: #2e1065;
+}
+
+/* 1. Fondo general de la página */
+body {
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 50%, #ede9fe 100%);
+    min-height: 100vh;
+    color: var(--texto-oscuro);
+}
+
+/* 2. Barra de navegación (Navbar) */
+.navbar.bg-accent {
+    background: linear-gradient(90deg, var(--morado-oscuro) 0%, var(--morado-principal) 60%, #7e22ce 100%) !important;
+    border-radius: 1rem;
+    padding: 0.75rem 1.25rem;
+    box-shadow: 0 10px 25px -5px rgba(107, 33, 168, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.88) !important;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.16) !important;
+    transform: translateY(-1px);
+}
+
+/* Submenú desplegable de Miembros */
+.navbar .menu {
+    background-color: #ffffff;
+    border: 1px solid var(--morado-borde);
+    border-radius: 0.75rem;
+    box-shadow: 0 12px 28px rgba(59, 7, 100, 0.18);
+    padding: 0.4rem;
+}
+
+.navbar .menu-item {
+    color: var(--texto-oscuro);
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.15s ease;
+}
+
+.navbar .menu-item:hover {
+    background-color: var(--morado-suave);
+    color: var(--morado-principal);
+}
+
+/* 3. Títulos principales (h1 de cada listado) */
+h1 {
+    color: var(--morado-oscuro);
+    font-weight: 700;
+    font-size: 1.85rem;
+    margin-bottom: 1.25rem;
+    padding-left: 0.85rem;
+    border-left: 5px solid var(--morado-medio);
+    letter-spacing: -0.02em;
+}
+
+/* 4. Tablas estilizadas como tarjetas modernas */
+.table {
+    --bs-table-bg: #ffffff;
+    --bs-table-border-color: var(--morado-borde);
+    background-color: #ffffff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 8px 24px -4px rgba(88, 28, 135, 0.12);
+    border: 1px solid var(--morado-borde);
+    vertical-align: middle;
+}
+
+/* Encabezado de las tablas */
+.table thead tr {
+    background: linear-gradient(90deg, var(--morado-principal), #7e22ce);
+}
+
+.table thead th {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+    padding: 1rem 1.1rem;
+    border-bottom: none;
+}
+
+/* Filas y celdas del cuerpo de la tabla */
+.table tbody tr {
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #fcfaff;
+}
+
+.table tbody tr:hover {
+    background-color: var(--morado-suave) !important;
+}
+
+.table tbody th,
+.table tbody td {
+    padding: 0.9rem 1.1rem;
+    color: #3b0764;
+    border-bottom: 1px solid var(--morado-borde);
+}
+
+/* Columna ID resaltada tipo insignia */
+.table tbody th[scope="row"] {
+    font-weight: 700;
+    color: var(--morado-principal);
+}
+
+/* Mensaje cuando la tabla está vacía */
+.table tbody td.text-center {
+    padding: 2.5rem;
+    color: #7e22ce;
+    font-style: italic;
+    background-color: #faf5ff;
+}
+
+/* 5. Fotos en la tabla de Miembros */
+.table tbody td img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--morado-medio);
+    box-shadow: 0 4px 10px rgba(107, 33, 168, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.table tbody td img:hover {
+    transform: scale(1.12);
+}
+
+/* 6. Botones de Editar y Eliminar (sin cambiar sus clases HTML) */
+.table tbody td:last-child {
+    white-space: nowrap;
+}
+
+/* Primer botón: Editar */
+.table tbody td a.btn:first-of-type {
+    background-color: var(--morado-suave) !important;
+    color: var(--morado-principal) !important;
+    border: 1px solid #d8b4fe !important;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 0.35rem 0.85rem;
+    margin-right: 0.35rem;
+    transition: all 0.2s ease;
+}
+
+.table tbody td a.btn:first-of-type:hover {
+    background-color: var(--morado-principal) !important;
+    color: #ffffff !important;
+    border-color: var(--morado-principal) !important;
+    box-shadow: 0 4px 12px rgba(107, 33, 168, 0.25);
+}
+
+/* Segundo botón: Eliminar */
+.table tbody td a.btn:last-of-type {
+    background-color: #fdf2f8 !important;
+    color: #be185d !important;
+    border: 1px solid #fbcfe8 !important;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 0.35rem 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.table tbody td a.btn:last-of-type:hover {
+    background-color: #be185d !important;
+    color: #ffffff !important;
+    border-color: #be185d !important;
+    box-shadow: 0 4px 12px rgba(190, 24, 93, 0.25);
+}
