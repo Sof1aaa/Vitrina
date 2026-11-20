@@ -1,0 +1,36 @@
+{% extends 'Components/navbar.html' %}
+
+{% block title %} Listado de Paises {% endblock %}
+
+
+{% block content %}
+<h1>Listado de Países</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for p in paises %}
+
+        <tr>
+            <th scope="row">{{p.id_pais}}</th>
+            <td>{{p.nombre_pais}}</td>
+            <td>
+                <a href="" type="button" class="btn btn-light btn-sm border">Editar</a>
+                <a href="" type="button" class="btn btn-light btn-sm border">Eliminar</a>
+            </td>
+        </tr>
+        {% empty %}
+            <tr>
+                <td colspan="5" class="text-center">
+                    No hay países registrados
+                </td>
+            </tr>
+        {% endfor%}
+    </tbody>
+</table>
+
+{% endblock %}
