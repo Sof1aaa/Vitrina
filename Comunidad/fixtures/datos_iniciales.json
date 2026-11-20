@@ -269,5 +269,54 @@
     "nombre_ciudad": "Quito",
     "id_pais": "59"
   }
+},
+{
+  "model": "Comunidad.iniciativa",
+  "pk": "1",
+  "fields": {
+    "nombre_iniciativa": "SoftGirls",
+    "descripcion_iniciativa": "Grupo de estudio de la Institución Universitaria Pascual Bravo, enfocada en mujeres.",
+    "mision_iniciativa": "Ser felices",
+    "vision_iniciativa": "Ser reconocidas en la Universidad, la ciudad y el país.",
+    "fecha_inicio_iniciativa": "2024-08-01",
+    "universidad_origen_iniciativa": "Institución Universitaria Pascual Bravo",
+    "numero_miembros_iniciativa": 30,
+    "logo_iniciativa": "logos_iniciativas/softgirls.jpeg",
+    "sitio_web_iniciativa": "https://pascualbravo.edu.co/#",
+    "email_contacto_iniciativa": "softgirls@pascualbravo.edu.co",
+    "id_categoria": "3"
+  }
+},
+{
+  "model": "Comunidad.evento",
+  "pk": "1",
+  "fields": {
+    "nombre_evento": "Visita empresarial",
+    "descripcion_evento": "Visita empresarial a Riwi",
+    "fecha_inicio_evento": "2026-11-23T12:00:00Z",
+    "fecha_fin_evento": "2026-11-23T18:00:00Z",
+    "id_ciudad": "604"
+  }
+},
+{
+  "model": "Comunidad.sede",
+  "pk": "1",
+  "fields": {
+    "nombre_sede": "IU Pascual bravo",
+    "link_maps_sede": "https://maps.app.goo.gl/7Dx7P9ARPWEUVG2o6",
+    "telefono_sede": "4480520",
+    "direccion_ubicacion": "Cl. 75 #74d-53, Pilarica, Medellín, Robledo, Medellín, Antioquia",
+    "id_iniciativa": "1",
+    "id_ciudad": "604"
+  }
+},
+{
+  "model": "Comunidad.redsocial",
+  "pk": "1",
+  "fields": {
+    "plataforma_red_social": "Instagram",
+    "url_red_social": "https://www.instagram.com/iupascualbravo/",
+    "id_iniciativa": "1"
+  }
 }
 ]
