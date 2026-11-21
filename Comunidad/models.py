@@ -94,6 +94,7 @@ class RedSocial(models.Model):
     def __str__(self):
         return str(self.id_red_social)
 
+#Esto es lo míooo
 class GaleriaEvento(models.Model):
     id_galeria = models.CharField(max_length=10, primary_key=True)
     imagen_galeria = models.ImageField(

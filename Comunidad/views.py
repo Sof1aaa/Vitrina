@@ -1,5 +1,9 @@
 from django.shortcuts import render
+<<<<<<< Updated upstream
 from Comunidad.models import Pais, CategoriaIniciativa
+=======
+from Comunidad.models import Evento, Iniciativa, Pais, CategoriaIniciativa, Miembro, Ciudad, RedSocial, Sede, GaleriaEvento
+>>>>>>> Stashed changes
 
 # Create your views here.
 def listadoPaises(request):
@@ -7,5 +11,39 @@ def listadoPaises(request):
     return render(request, 'paises/listado_paises.html', {'paises': paises})
 
 def listadoCategorias(request):
+<<<<<<< Updated upstream
     categorias = CategoriaIniciativa.objects.all() #Select * from faculty 
     return render(request, 'CategoriasIniciativas/listado_categorias.html', {'categorias': categorias})
+=======
+    categorias = CategoriaIniciativa.objects.all() #Select * from 
+    return render(request, 'CategoriasIniciativas/listado_categorias.html', {'categorias': categorias})
+
+def listadoMiembros(request):
+    miembros = Miembro.objects.all() #Select * from
+    return render(request, 'Miembros/listado_miembros.html', {'miembros': miembros})
+
+# JOIN ENTRE DOS TABLAS USANDO ORM DJANGO
+def listadoCiudades(request):
+    ciudades = Ciudad.objects.select_related('id_pais')
+    return render(request, 'Ciudades/listado_ciudades.html', {'ciudades': ciudades})
+
+def listadoSedes(request):
+    sedes = Sede.objects.all()
+    return render(request, 'Sedes/listado_sedes.html', {'sedes': sedes})
+
+def listadoEventos(request):
+    eventos = Evento.objects.all()
+    return render(request, 'Eventos/listado_eventos.html', {'eventos': eventos})
+
+def listadoRedesSociales(request):
+    redes_sociales = RedSocial.objects.all()
+    return render(request, 'RedesSociales/listado_red_social.html', {'redes_sociales': redes_sociales})
+
+def listadoIniciativas(request):
+    iniciativas = Iniciativa.objects.all()
+    return render(request, 'Iniciativas/listado_iniciativas.html', {'iniciativas': iniciativas})
+
+def listadoGaleriaEvento(request):
+    galeria_evento = GaleriaEvento.objects.all()
+    return render(request, 'GaleriaEvento/listado_galeria_evento.html', {'galeria_evento': galeria_evento})
+>>>>>>> Stashed changes

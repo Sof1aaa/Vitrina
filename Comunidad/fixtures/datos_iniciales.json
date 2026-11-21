@@ -10,14 +10,22 @@
   "model": "Comunidad.pais",
   "pk": "51",
   "fields": {
+<<<<<<< Updated upstream
     "nombre_pais": "Perú"
+=======
+    "nombre_pais": "Per�"
+>>>>>>> Stashed changes
   }
 },
 {
   "model": "Comunidad.pais",
   "pk": "52",
   "fields": {
+<<<<<<< Updated upstream
     "nombre_pais": "México"
+=======
+    "nombre_pais": "M�xico"
+>>>>>>> Stashed changes
   }
 },
 {
@@ -66,8 +74,13 @@
   "model": "Comunidad.categoriainiciativa",
   "pk": "1",
   "fields": {
+<<<<<<< Updated upstream
     "nombre_categoria": "Clubes de Programación",
     "descripcion_categoria": "Espacios extracurriculares gratuitos para chicas que desean aprender sobre videojuegos, apps móviles"
+=======
+    "nombre_categoria": "Clubes de Programaci�n",
+    "descripcion_categoria": "Espacios extracurriculares gratuitos para chicas que desean aprender sobre videojuegos, apps m�viles"
+>>>>>>> Stashed changes
   }
 },
 {
@@ -75,7 +88,11 @@
   "pk": "2",
   "fields": {
     "nombre_categoria": "Talleres/Hackatones",
+<<<<<<< Updated upstream
     "descripcion_categoria": "Competencias de resolución de problemas tecnológicos"
+=======
+    "descripcion_categoria": "Competencias de resoluci�n de problemas tecnol�gicos"
+>>>>>>> Stashed changes
   }
 },
 {
@@ -83,7 +100,11 @@
   "pk": "3",
   "fields": {
     "nombre_categoria": "Grupos de Estudio",
+<<<<<<< Updated upstream
     "descripcion_categoria": "Espacios para adquirir habilidades adicionales a las vistas en clases(lenguajes de programación,BD)"
+=======
+    "descripcion_categoria": "Espacios para adquirir habilidades adicionales a las vistas en clases(lenguajes de programaci�n,BD)"
+>>>>>>> Stashed changes
   }
 },
 {
@@ -91,7 +112,11 @@
   "pk": "4",
   "fields": {
     "nombre_categoria": "Networking",
+<<<<<<< Updated upstream
     "descripcion_categoria": "Agrupaciones que organicen encuentros y talleres técnicos con profesionales de la industria"
+=======
+    "descripcion_categoria": "Agrupaciones que organicen encuentros y talleres t�cnicos con profesionales de la industria"
+>>>>>>> Stashed changes
   }
 },
 {
@@ -107,7 +132,88 @@
   "pk": "6",
   "fields": {
     "nombre_categoria": "Bootcamps",
+<<<<<<< Updated upstream
     "descripcion_categoria": "Programas de corta duración para fortalecer competencias y tasa de empleabilidad"
+=======
+    "descripcion_categoria": "Programas de corta duraci�n para fortalecer competencias y tasa de empleabilidad"
+  }
+},
+{
+  "model": "Comunidad.miembro",
+  "pk": "148",
+  "fields": {
+    "nombre_miembro": "Gloria Lopera",
+    "ocupacion_cargo_miembro": "Docente",
+    "info_miembro": "Gloria es docente de la UDEA y lidera la iniciativa CodeWoman",
+    "foto_miembro": "miembros/gloria_lopera_RHBWrHv.png",
+    "correo_miembro": "glorlop148@gmail.com"
+  }
+},
+{
+  "model": "Comunidad.miembro",
+  "pk": "237",
+  "fields": {
+    "nombre_miembro": "Luc�a Palacio",
+    "ocupacion_cargo_miembro": "Estudiante",
+    "info_miembro": "Luc�a es estudiante de 10� semestre de la carrera de Ingenier�a Inform�tica de la Universidad Nacional. Pertenece a la iniciativa IAFEM",
+    "foto_miembro": "miembros/lucia_palacio_pbWhgwQ.png",
+    "correo_miembro": "lucpal237@gmail.com"
+  }
+},
+{
+  "model": "Comunidad.miembro",
+  "pk": "382",
+  "fields": {
+    "nombre_miembro": "Alejandra Ospina",
+    "ocupacion_cargo_miembro": "Patrocinadora",
+    "info_miembro": "Alejandra lleva 5 a�os dirigiendo su propia empresa y brindando apoyo econ�mico a la Sociedad Colombiana de Computaci�n",
+    "foto_miembro": "miembros/alejandra_ospina_FjfpqCV.png",
+    "correo_miembro": "aleja382@gmail.com"
+  }
+},
+{
+  "model": "Comunidad.miembro",
+  "pk": "460",
+  "fields": {
+    "nombre_miembro": "Paulina Sep�lveda",
+    "ocupacion_cargo_miembro": "Co-Organizadora",
+    "info_miembro": "Paulina ha hecho parte del evento 20CCC y de todas sus versiones anteriores desempe�ando funciones de gesti�n y alianzas",
+    "foto_miembro": "miembros/paulina_sepulveda_lsTyDAA.png",
+    "correo_miembro": "pausep460@gmail.com"
+  }
+},
+{
+  "model": "Comunidad.miembro",
+  "pk": "587",
+  "fields": {
+    "nombre_miembro": "Ana Rojas",
+    "ocupacion_cargo_miembro": "Directora",
+    "info_miembro": "Ana es directora del evento Ellas Transforman, que surgi� del POLI",
+    "foto_miembro": "miembros/ana_rojas_xlvPSFc.png",
+    "correo_miembro": "anaro587@gmail.com"
+  }
+},
+{
+  "model": "Comunidad.miembro",
+  "pk": "668",
+  "fields": {
+    "nombre_miembro": "Alicia Vasquez",
+    "ocupacion_cargo_miembro": "Ponente",
+    "info_miembro": "Joven de 20 a�os que ha realizado diversas ponencias en base a su programa acad�mico Ingenier�a de software. Hace parte del grupo de estudio Softgirls de la IU Pascual Bravo",
+    "foto_miembro": "miembros/alicia_vasquez_FAj6qVI.jpg",
+    "correo_miembro": "alicvas668@gmail.com"
+  }
+},
+{
+  "model": "Comunidad.miembro",
+  "pk": "861",
+  "fields": {
+    "nombre_miembro": "Dana Garc�s",
+    "ocupacion_cargo_miembro": "Estudiante",
+    "info_miembro": "Dana, es una estudiante de 7� semestre de la carrera de Ingenier�a de Sistemas de la Universidad de Medell�n. Hace parte del grupo JUMI",
+    "foto_miembro": "miembros/dana_garces_ELvNKUe.png",
+    "correo_miembro": "dangar861@gmail.com"
+>>>>>>> Stashed changes
   }
 },
 {
@@ -116,9 +222,96 @@
   "fields": {
     "nombre_miembro": "Violeta Parra",
     "ocupacion_cargo_miembro": "Estudiante",
+<<<<<<< Updated upstream
     "info_miembro": "Estudiante de la IU Pascual Bravo, actualmente está en 5° semestre del Programa Tecnología en Desarrollo de Software",
     "foto_miembro": "miembros/pepin_hermoso.jpeg",
     "correo_miembro": "violta985@pascualbravo.edu.co"
+=======
+    "info_miembro": "Estudiante de la IU Pascual Bravo, actualmente est� en 5� semestre del Programa Tecnolog�a en Desarrollo de Software. Hace parte de la iniciativa Softgirls",
+    "foto_miembro": "miembros/violeta_parra_t2cSQfa.jpg",
+    "correo_miembro": "violta985@gmail.com"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "11",
+  "fields": {
+    "nombre_ciudad": "Buenos Aires",
+    "id_pais": "54"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "2",
+  "fields": {
+    "nombre_ciudad": "La Paz",
+    "id_pais": "91"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "202",
+  "fields": {
+    "nombre_ciudad": "Washington",
+    "id_pais": "1"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "511",
+  "fields": {
+    "nombre_ciudad": "Lima",
+    "id_pais": "51"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "52",
+  "fields": {
+    "nombre_ciudad": "Santiago de Chile",
+    "id_pais": "56"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "55",
+  "fields": {
+    "nombre_ciudad": "Ciudad de Mexico",
+    "id_pais": "52"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "604",
+  "fields": {
+    "nombre_ciudad": "Medell�n",
+    "id_pais": "57"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "61",
+  "fields": {
+    "nombre_ciudad": "Brasilia",
+    "id_pais": "55"
+  }
+},
+{
+  "model": "Comunidad.ciudad",
+  "pk": "93",
+  "fields": {
+    "nombre_ciudad": "Quito",
+    "id_pais": "59"
+>>>>>>> Stashed changes
+  }
+},
+{
+  "model": "Comunidad.galeriaevento",
+  "pk": "1",
+  "fields": {
+    "imagen_galeria": "galeria/riwi.jpeg",
+    "descripcion_galeria": "SoftGirls explorando el mundo tech con la empresa Riwi 💜",
+    "id_evento": "1"
   }
 }
 ]
