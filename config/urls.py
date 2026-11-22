@@ -2,8 +2,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-
-from Comunidad.views import listadoPaises, listadoCategorias, listadoMiembros, listadoCiudades, listadoSedes, listadoEventos, listadoRedesSociales, listadoIniciativas
+from Comunidad.views import listadoPaises, listadoCategorias, listadoMiembros, listadoCiudades, listadoSedes, listadoEventos, listadoRedesSociales, listadoIniciativas, listadoGaleriaEvento
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -14,7 +13,8 @@ urlpatterns = [
     path('sedes/', listadoSedes, name='listado_sedes'),
     path('eventos/', listadoEventos, name='listado_eventos'),
     path('redes-sociales/', listadoRedesSociales, name='listado_redes_sociales'),
-    path('iniciativas/', listadoIniciativas, name='listado_iniciativas')
+    path('iniciativas/', listadoIniciativas, name='listado_iniciativas'),
+    path('galeria-eventos/', listadoGaleriaEvento, name='listado_galeria_evento')
 ]
 
 if settings.DEBUG:
