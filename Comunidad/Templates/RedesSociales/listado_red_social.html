@@ -1,0 +1,40 @@
+{% extends 'Components/navbar.html' %}
+
+{% block title %} Red Social {% endblock %}
+
+
+{% block content %}
+<h1>Redes Sociales</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Iniciativa</th>
+            <th scope="col">Plataforma</th>
+            <th scope="col">URL</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for r in redes_sociales %}
+
+        <tr>
+            <th scope="row">{{r.id_red_social}}</th>
+            <td>{{r.id_iniciativa.nombre_iniciativa}}</td>
+            <td>{{r.plataforma_red_social}}</td>
+            <td>{{r.url_red_social}}</td>
+            <td>
+                <a href="" type="button" class="btn btn-light btn-sm border">Editar</a>
+                <a href="" type="button" class="btn btn-light btn-sm border">Eliminar</a>
+            </td>
+        </tr>
+        {% empty %}
+            <tr>
+                <td colspan="4" class="text-center">
+                    No hay redes sociales registradas
+                </td>
+            </tr>
+        {% endfor%}
+    </tbody>
+</table>
+
+{% endblock %}

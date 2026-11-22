@@ -1,20 +1,12 @@
 from django.shortcuts import render
-<<<<<<< Updated upstream
-from Comunidad.models import Pais, CategoriaIniciativa
-=======
 from Comunidad.models import Evento, Iniciativa, Pais, CategoriaIniciativa, Miembro, Ciudad, RedSocial, Sede, GaleriaEvento
->>>>>>> Stashed changes
 
 # Create your views here.
 def listadoPaises(request):
-    paises = Pais.objects.all() #Select * from faculty 
+    paises = Pais.objects.all() #Select *
     return render(request, 'paises/listado_paises.html', {'paises': paises})
 
 def listadoCategorias(request):
-<<<<<<< Updated upstream
-    categorias = CategoriaIniciativa.objects.all() #Select * from faculty 
-    return render(request, 'CategoriasIniciativas/listado_categorias.html', {'categorias': categorias})
-=======
     categorias = CategoriaIniciativa.objects.all() #Select * from 
     return render(request, 'CategoriasIniciativas/listado_categorias.html', {'categorias': categorias})
 
@@ -46,4 +38,3 @@ def listadoIniciativas(request):
 def listadoGaleriaEvento(request):
     galeria_evento = GaleriaEvento.objects.all()
     return render(request, 'GaleriaEvento/listado_galeria_evento.html', {'galeria_evento': galeria_evento})
->>>>>>> Stashed changes
