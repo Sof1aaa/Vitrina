@@ -125,9 +125,9 @@
   "model": "Comunidad.miembro",
   "pk": "237",
   "fields": {
-    "nombre_miembro": "Luc�a Palacio",
+    "nombre_miembro": "Lucía Palacio",
     "ocupacion_cargo_miembro": "Estudiante",
-    "info_miembro": "Luc�a es estudiante de 10� semestre de la carrera de Ingenier�a Inform�tica de la Universidad Nacional. Pertenece a la iniciativa IAFEM",
+    "info_miembro": "Lucía es estudiante de 10° semestre de la carrera de Ingeniería Informática de la Universidad Nacional. Pertenece a la iniciativa IAFEM",
     "foto_miembro": "miembros/lucia_palacio_pbWhgwQ.png",
     "correo_miembro": "lucpal237@gmail.com"
   }
@@ -138,7 +138,7 @@
   "fields": {
     "nombre_miembro": "Alejandra Ospina",
     "ocupacion_cargo_miembro": "Patrocinadora",
-    "info_miembro": "Alejandra lleva 5 a�os dirigiendo su propia empresa y brindando apoyo econ�mico a la Sociedad Colombiana de Computaci�n",
+    "info_miembro": "Alejandra lleva 5 años dirigiendo su propia empresa y brindando apoyo económico a la Sociedad Colombiana de Computación",
     "foto_miembro": "miembros/alejandra_ospina_FjfpqCV.png",
     "correo_miembro": "aleja382@gmail.com"
   }
@@ -147,9 +147,9 @@
   "model": "Comunidad.miembro",
   "pk": "460",
   "fields": {
-    "nombre_miembro": "Paulina Sep�lveda",
+    "nombre_miembro": "Paulina Sepúlveda",
     "ocupacion_cargo_miembro": "Co-Organizadora",
-    "info_miembro": "Paulina ha hecho parte del evento 20CCC y de todas sus versiones anteriores desempe�ando funciones de gesti�n y alianzas",
+    "info_miembro": "Paulina ha hecho parte del evento 20CCC y de todas sus versiones anteriores desempeñando funciones de gestión y alianzas",
     "foto_miembro": "miembros/paulina_sepulveda_lsTyDAA.png",
     "correo_miembro": "pausep460@gmail.com"
   }
@@ -160,7 +160,7 @@
   "fields": {
     "nombre_miembro": "Ana Rojas",
     "ocupacion_cargo_miembro": "Directora",
-    "info_miembro": "Ana es directora del evento Ellas Transforman, que surgi� del POLI",
+    "info_miembro": "Ana es directora del evento Ellas Transforman, que surgió del POLI",
     "foto_miembro": "miembros/ana_rojas_xlvPSFc.png",
     "correo_miembro": "anaro587@gmail.com"
   }
@@ -171,7 +171,7 @@
   "fields": {
     "nombre_miembro": "Alicia Vasquez",
     "ocupacion_cargo_miembro": "Ponente",
-    "info_miembro": "Joven de 20 a�os que ha realizado diversas ponencias en base a su programa acad�mico Ingenier�a de software. Hace parte del grupo de estudio Softgirls de la IU Pascual Bravo",
+    "info_miembro": "Joven de 20 años que ha realizado diversas ponencias en base a su programa académico Ingeniería de software. Hace parte del grupo de estudio Softgirls de la IU Pascual Bravo",
     "foto_miembro": "miembros/alicia_vasquez_FAj6qVI.jpg",
     "correo_miembro": "alicvas668@gmail.com"
   }
@@ -257,9 +257,9 @@
   "model": "Comunidad.miembro",
   "pk": "861",
   "fields": {
-    "nombre_miembro": "Dana Garc�s",
+    "nombre_miembro": "Dana Garcés",
     "ocupacion_cargo_miembro": "Estudiante",
-    "info_miembro": "Dana, es una estudiante de 7� semestre de la carrera de Ingenier�a de Sistemas de la Universidad de Medell�n. Hace parte del grupo JUMI",
+    "info_miembro": "Dana, es una estudiante de 7° semestre de la carrera de Ingeniería de Sistemas de la Universidad de Medellín. Hace parte del grupo JUMI",
     "foto_miembro": "miembros/dana_garces_ELvNKUe.png",
     "correo_miembro": "dangar861@gmail.com"
   }
@@ -270,7 +270,7 @@
   "fields": {
     "nombre_miembro": "Violeta Parra",
     "ocupacion_cargo_miembro": "Estudiante",
-    "info_miembro": "Estudiante de la IU Pascual Bravo, actualmente está en 5° semestre del Programa Tecnología en Desarrollo de Software",
+    "info_miembro": "Estudiante de la IU Pascual Bravo, actualmente está en 5° semestre del Programa Tecnología en Desarrollo de Software. Hace parte de la iniciativa Softgirls",
     "foto_miembro": "miembros/violeta_parra_t2cSQfa.jpg",
     "correo_miembro": "violta985@gmail.com"
   }
@@ -327,7 +327,7 @@
   "model": "Comunidad.ciudad",
   "pk": "604",
   "fields": {
-    "nombre_ciudad": "Medell�n",
+    "nombre_ciudad": "Medellín",
     "id_pais": "57"
   }
 },
@@ -361,11 +361,11 @@
   "pk": "1",
   "fields": {
     "nombre_iniciativa": "SoftGirls",
-    "descripcion_iniciativa": "Grupo de estudio de la Instituci�n Universitaria Pascual Bravo, enfocada en mujeres.",
+    "descripcion_iniciativa": "Grupo de estudio de la Institución Universitaria Pascual Bravo, enfocada en mujeres.",
     "mision_iniciativa": "Ser felices",
-    "vision_iniciativa": "Ser reconocidas en la Universidad, la ciudad y el pa�s.",
+    "vision_iniciativa": "Ser reconocidas en la Universidad, la ciudad y el país.",
     "fecha_inicio_iniciativa": "2024-08-01",
-    "universidad_origen_iniciativa": "Instituci�n Universitaria Pascual Bravo",
+    "universidad_origen_iniciativa": "Institución Universitaria Pascual Bravo",
     "numero_miembros_iniciativa": 30,
     "logo_iniciativa": "logos_iniciativas/softgirls.jpeg",
     "sitio_web_iniciativa": "https://pascualbravo.edu.co/#",
@@ -391,7 +391,7 @@
     "nombre_sede": "IU Pascual bravo",
     "link_maps_sede": "https://maps.app.goo.gl/7Dx7P9ARPWEUVG2o6",
     "telefono_sede": "4480520",
-    "direccion_ubicacion": "Cl. 75 #74d-53, Pilarica, Medell�n, Robledo, Medell�n, Antioquia",
+    "direccion_ubicacion": "Cl. 75 #74d-53, Pilarica, Medellín, Robledo, Medellín, Antioquia",
     "id_iniciativa": "1",
     "id_ciudad": "604"
   }
