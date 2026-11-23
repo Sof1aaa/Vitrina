@@ -109,6 +109,7 @@ class GaleriaEvento(models.Model):
         return str(self.id_galeria)
 
 
+#check
 class MiembroIniciativa(models.Model):
     id_miembro_iniciativa = models.CharField(max_length=10, primary_key=True)
     id_miembro = models.ForeignKey(Miembro, on_delete=models.CASCADE)
@@ -118,6 +119,7 @@ class MiembroIniciativa(models.Model):
         return str(self.id_miembro_iniciativa)
 
 
+#check
 class IniciativaEvento(models.Model):
     id_iniciativa_evento = models.CharField(max_length=10, primary_key=True)
     id_iniciativa = models.ForeignKey(Iniciativa, on_delete=models.CASCADE)
@@ -127,6 +129,7 @@ class IniciativaEvento(models.Model):
         return str(self.id_iniciativa_evento)
 
 
+#check
 class MiembroEvento(models.Model):
     id_miembro_evento = models.CharField(max_length=10, primary_key=True)
     id_miembro = models.ForeignKey(Miembro, on_delete=models.CASCADE)

@@ -1,0 +1,191 @@
+{% extends 'Components/navbar.html' %}
+
+{% block title %}Iniciativas en Eventos{% endblock %}
+
+{% block content %}
+<style>
+    .contenedor-principal {
+        max-width: 1140px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .titulo-seccion {
+        border-left: 5px solid #6b21a8;
+        padding-left: 12px;
+        color: #2e1065;
+        margin-bottom: 24px;
+    }
+
+    .grid-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 24px;
+    }
+
+    .galeria-card {
+        border: 3px solid #6b21a8;
+        border-radius: 16px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 16px;
+    }
+
+    .galeria-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(181, 126, 220, 0.25);
+    }
+
+    /* Rectángulo centrado para que el logo luzca completo */
+    .logo-rectangulo {
+        width: 100%;
+        max-width: 220px;
+        height: 125px;
+        border-radius: 12px;
+        border: 2px solid #f3e8ff;
+        background-color: #faf5ff;
+        object-fit: contain;
+        padding: 10px;
+        margin-bottom: 14px;
+        transition: transform 0.4s ease;
+        display: block;
+    }
+
+    .galeria-card:hover .logo-rectangulo {
+        transform: scale(1.04);
+    }
+
+    .galeria-body {
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .id-registro {
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: #9333ea;
+        margin-bottom: 4px;
+    }
+
+    .galeria-titulo {
+        font-size: 1.15rem;
+        font-weight: 700;
+        margin: 0 0 6px 0;
+        color: #6f4295;
+    }
+
+    .descripcion-texto {
+        font-size: 0.86rem;
+        color: #6c757d;
+        margin: 0 0 14px 0;
+    }
+
+    .evento-badge {
+        background-color: #f3e8ff;
+        color: #6b21a8;
+        font-size: 0.82rem;
+        font-weight: 600;
+        padding: 6px 14px;
+        border-radius: 12px;
+        margin-bottom: 16px;
+    }
+
+    .acciones-card {
+        margin-top: auto;
+        padding-top: 12px;
+        border-top: 1px solid #f3e8ff;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .btn-accion {
+        text-decoration: none;
+        font-size: 0.85rem;
+        font-weight: 600;
+        padding: 6px 16px;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+        display: inline-block;
+    }
+
+    .btn-editar {
+        background-color: #f3e8ff;
+        color: #581c87;
+        border: 1px solid #d8b4fe;
+    }
+
+    .btn-editar:hover {
+        background-color: #581c87;
+        color: #ffffff;
+        border-color: #581c87;
+        box-shadow: 0 4px 10px rgba(88, 28, 135, 0.25);
+    }
+
+    .btn-eliminar {
+        background-color: #fdf2f8;
+        color: #9d174d;
+        border: 1px solid #fbcfe8;
+    }
+
+    .btn-eliminar:hover {
+        background-color: #9d174d;
+        color: #ffffff;
+        border-color: #9d174d;
+        box-shadow: 0 4px 10px rgba(157, 23, 77, 0.25);
+    }
+</style>
+
+<div class="contenedor-principal">
+    <h1 class="titulo-seccion">Iniciativas En Eventos</h1>
+
+    <div class="grid-cards">
+        {% for ie in iniciativas_eventos %}
+        <div class="galeria-card">
+
+            {% if ie.id_iniciativa.logo_iniciativa %}
+                <img src="{{ ie.id_iniciativa.logo_iniciativa.url }}" class="logo-rectangulo" alt="{{ ie.id_iniciativa.nombre_iniciativa }}">
+            {% endif %}
+
+            <div class="galeria-body">
+                <!-- ID del registro -->
+                <span class="id-registro">ID #{{ ie.id_iniciativa_evento }}</span>
+
+                <!-- ID y Nombre de la Iniciativa -->
+                <h5 class="galeria-titulo">
+                    {{ ie.id_iniciativa.id_iniciativa }} - {{ ie.id_iniciativa.nombre_iniciativa }}
+                </h5>
+
+                <!-- Descripción corta del evento -->
+                <p class="descripcion-texto">
+                    {{ ie.id_evento.descripcion_evento }}
+                </p>
+
+                <!-- ID y Nombre del Evento -->
+                <span class="evento-badge">
+                    Evento #{{ ie.id_evento.id_evento }}: {{ ie.id_evento.nombre_evento }}
+                </span>
+
+                <div class="acciones-card">
+                    <a href="#" class="btn-accion btn-editar">Editar</a>
+                    <a href="#" class="btn-accion btn-eliminar">Eliminar</a>
+                </div>
+            </div>
+
+        </div>
+        {% empty %}
+        <p>No hay iniciativas asociadas a eventos aún.</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

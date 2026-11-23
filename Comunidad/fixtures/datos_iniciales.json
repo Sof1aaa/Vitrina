@@ -335,5 +335,29 @@
         "id_miembro": "668",
         "id_iniciativa": "1"
     }
+},
+{
+    "model": "Comunidad.iniciativaevento",
+    "pk": "1",
+    "fields": {
+        "id_iniciativa": "1",
+        "id_evento": "1"
+    }
+},
+{
+    "model": "Comunidad.miembroevento",
+    "pk": "1",
+    "fields": {
+        "id_miembro": "985",
+        "id_evento": "1"
+    }
+},
+{
+    "model": "Comunidad.miembroevento",
+    "pk": "2",
+    "fields": {
+        "id_miembro": "668",
+        "id_evento": "1"
+    }
 }
 ]
