@@ -1,0 +1,202 @@
+{% extends 'Components/navbar.html' %}
+
+{% block title %}Miembros en Eventos{% endblock %}
+
+{% block content %}
+<style>
+    .contenedor-principal {
+        max-width: 1140px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .titulo-seccion {
+        border-left: 5px solid #6b21a8;
+        padding-left: 12px;
+        color: #2e1065;
+        margin-bottom: 24px;
+    }
+
+    .grid-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 24px;
+    }
+
+    .galeria-card {
+        border: 3px solid #6b21a8;
+        border-radius: 16px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 22px 16px;
+    }
+
+    .galeria-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(181, 126, 220, 0.25);
+    }
+
+    .galeria-img {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        border: 3px solid #f3e8ff;
+        object-fit: cover;
+        object-position: center 20%;
+        margin-bottom: 14px;
+        transition: transform 0.4s ease;
+        display: block;
+    }
+
+    .galeria-card:hover .galeria-img {
+        transform: scale(1.06);
+    }
+
+    .galeria-body {
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .id-registro {
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: #9333ea;
+        margin-bottom: 4px;
+    }
+
+    .galeria-titulo {
+        font-size: 1.15rem;
+        font-weight: 700;
+        margin: 0 0 4px 0;
+        color: #6f4295;
+    }
+
+    .cargo-texto {
+        font-size: 0.88rem;
+        color: #6c757d;
+        margin: 0 0 12px 0;
+    }
+
+    .evento-badge {
+        background-color: #f3e8ff;
+        color: #6b21a8;
+        font-size: 0.82rem;
+        font-weight: 600;
+        padding: 6px 14px;
+        border-radius: 12px;
+        margin-bottom: 6px;
+    }
+
+    .fecha-texto {
+        font-size: 0.8rem;
+        color: #7e22ce;
+        font-weight: 500;
+        margin: 0 0 16px 0;
+    }
+
+    .acciones-card {
+        margin-top: auto;
+        padding-top: 12px;
+        border-top: 1px solid #f3e8ff;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .btn-accion {
+        text-decoration: none;
+        font-size: 0.85rem;
+        font-weight: 600;
+        padding: 6px 16px;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+        display: inline-block;
+    }
+
+    .btn-editar {
+        background-color: #f3e8ff;
+        color: #581c87;
+        border: 1px solid #d8b4fe;
+    }
+
+    .btn-editar:hover {
+        background-color: #581c87;
+        color: #ffffff;
+        border-color: #581c87;
+        box-shadow: 0 4px 10px rgba(88, 28, 135, 0.25);
+    }
+
+    .btn-eliminar {
+        background-color: #fdf2f8;
+        color: #9d174d;
+        border: 1px solid #fbcfe8;
+    }
+
+    .btn-eliminar:hover {
+        background-color: #9d174d;
+        color: #ffffff;
+        border-color: #9d174d;
+        box-shadow: 0 4px 10px rgba(157, 23, 77, 0.25);
+    }
+</style>
+
+<div class="contenedor-principal">
+    <h1 class="titulo-seccion">Miembros En Eventos</h1>
+
+    <div class="grid-cards">
+        {% for me in miembros_eventos %}
+        <div class="galeria-card">
+
+            {% if me.id_miembro.foto_miembro %}
+                <img src="{{ me.id_miembro.foto_miembro.url }}" class="galeria-img" alt="{{ me.id_miembro.nombre_miembro }}">
+            {% endif %}
+
+            <div class="galeria-body">
+                <!-- ID de la relación -->
+                <span class="id-registro">ID #{{ me.id_miembro_evento }}</span>
+
+                <!-- ID y Nombre del Miembro -->
+                <h5 class="galeria-titulo">
+                    {{ me.id_miembro.id_miembro }} - {{ me.id_miembro.nombre_miembro }}
+                </h5>
+
+                <!-- Cargo / Ocupación -->
+                <p class="cargo-texto">
+                    {{ me.id_miembro.ocupacion_cargo_miembro }}
+                </p>
+
+                <!-- ID y Nombre del Evento -->
+                <span class="evento-badge">
+                    Evento #{{ me.id_evento.id_evento }}: {{ me.id_evento.nombre_evento }}
+                </span>
+
+                <!-- Fecha del evento -->
+                {% if me.id_evento.fecha_inicio_evento %}
+                <p class="fecha-texto">
+                    {{ me.id_evento.fecha_inicio_evento|date:"d M Y - h:i A" }}
+                </p>
+                {% endif %}
+
+                <div class="acciones-card">
+                    <a href="#" class="btn-accion btn-editar">Editar</a>
+                    <a href="#" class="btn-accion btn-eliminar">Eliminar</a>
+                </div>
+            </div>
+
+        </div>
+        {% empty %}
+        <p>No hay miembros registrados en los eventos aún.</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

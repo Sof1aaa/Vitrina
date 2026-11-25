@@ -4,12 +4,33 @@
 
 {% block content %}
 <style>
-   .galeria-card {
+    .contenedor-galeria {
+        max-width: 1140px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .titulo-seccion {
+        border-left: 5px solid #6b21a8;
+        padding-left: 12px;
+        color: #2e1065;
+        margin-bottom: 24px;
+    }
+
+    .grid-galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 24px;
+    }
+
+    .galeria-card {
         border: 4px solid #6b21a8;
         border-radius: 18px;
         overflow: hidden;
         background-color: #fff;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
     }
 
     .galeria-card:hover {
@@ -19,67 +40,105 @@
 
     .galeria-img {
         width: 100%;
-        height: 300px;
+        height: 240px;
         object-fit: contain;
         transition: transform 0.4s ease;
         cursor: pointer;
+        display: block;
     }
 
     .galeria-card:hover .galeria-img {
-        transform: scale(1.08);
+        transform: scale(1.06);
     }
 
     .galeria-body {
         padding: 18px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
     .galeria-titulo {
         font-size: 1rem;
         font-weight: 600;
-        margin-bottom: 0;
+        margin: 0 0 14px 0;
         color: #6f4295;
+    }
+
+    .acciones-card {
+        margin-top: auto;
+        padding-top: 12px;
+        border-top: 1px solid #f3e8ff;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .btn-accion {
+        text-decoration: none;
+        font-size: 0.85rem;
+        font-weight: 600;
+        padding: 6px 16px;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+        display: inline-block;
+    }
+
+    .btn-editar {
+        background-color: #f3e8ff;
+        color: #581c87;
+        border: 1px solid #d8b4fe;
+    }
+
+    .btn-editar:hover {
+        background-color: #581c87;
+        color: #ffffff;
+        border-color: #581c87;
+        box-shadow: 0 4px 10px rgba(88, 28, 135, 0.25);
+    }
+
+    .btn-eliminar {
+        background-color: #fdf2f8;
+        color: #9d174d;
+        border: 1px solid #fbcfe8;
+    }
+
+    .btn-eliminar:hover {
+        background-color: #9d174d;
+        color: #ffffff;
+        border-color: #9d174d;
+        box-shadow: 0 4px 10px rgba(157, 23, 77, 0.25);
     }
 </style>
 
-<div class="container mt-4">
+<div class="contenedor-galeria">
+    <h1 class="titulo-seccion">Galería de Eventos</h1>
 
-    <h1 class="mb-4">Galería de Eventos</h1>
-
-    <div class="row">
-
+    <div class="grid-galeria">
         {% for g in galeria_evento %}
+        <div class="galeria-card">
 
-        <div class="col-md-6 col-lg-4 mb-4">
+            {% if g.imagen_galeria %}
+            <img src="{{ g.imagen_galeria.url }}" class="galeria-img" alt="{{ g.descripcion_galeria }}">
+            {% endif %}
 
-            <div class="card galeria-card h-100 shadow-sm">
+            <div class="galeria-body">
+                <h5 class="galeria-titulo">
+                    {{ g.descripcion_galeria }}
+                </h5>
 
-                {% if g.imagen_galeria %}
-                <img src="{{ g.imagen_galeria.url }}" class="galeria-img" alt="{{ g.descripcion_galeria }}">
-                {% endif %}
-
-                <div class="card-body galeria-body">
-
-                    <h5 class="galeria-titulo">
-                        {{ g.descripcion_galeria }}
-                    </h5>
-
+                <div class="acciones-card">
+                    <a href="#" class="btn-accion btn-editar">Editar</a>
+                    <a href="#" class="btn-accion btn-eliminar">Eliminar</a>
                 </div>
-
             </div>
 
         </div>
-
         {% empty %}
-
-        <div class="col-12">
-            <p class="text-center">
-                No hay imágenes registradas en la galería.
-            </p>
-        </div>
-
+        <p>No hay imágenes registradas en la galería.</p>
         {% endfor %}
-
     </div>
-
 </div>
 {% endblock %}

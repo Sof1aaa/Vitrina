@@ -46,8 +46,8 @@
                                 </button>
 
                                 <div class="menu">
-                                    <a class="menu-item" href="#">Miembros Iniciativa</a>
-                                    <a class="menu-item" href="#">Miembros Evento</a>
+                                    <a class="menu-item" href="{% url 'listado_miembros_iniciativas' %}">Miembros Iniciativa</a>
+                                    <a class="menu-item" href="{% url 'listado_miembro_evento' %}">Miembros Evento</a>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -67,9 +67,6 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{% url 'listado_galeria_evento' %}">Galerias Eventos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Iniciativa Evento</a>
                             </li>
 
                         </ul>

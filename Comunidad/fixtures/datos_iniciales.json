@@ -1,408 +1,363 @@
 [
 {
-  "model": "Comunidad.pais",
-  "pk": "1",
-  "fields": {
-    "nombre_pais": "Estados Unidos"
-  }
+    "model": "Comunidad.pais",
+    "pk": "1",
+    "fields": {
+        "nombre_pais": "Estados Unidos"
+    }
 },
 {
-  "model": "Comunidad.pais",
-  "pk": "51",
-  "fields": {
-    "nombre_pais": "Perú"
-  }
+    "model": "Comunidad.pais",
+    "pk": "51",
+    "fields": {
+        "nombre_pais": "Perú"
+    }
 },
 {
-  "model": "Comunidad.pais",
-  "pk": "52",
-  "fields": {
-    "nombre_pais": "México"
-  }
+    "model": "Comunidad.pais",
+    "pk": "52",
+    "fields": {
+        "nombre_pais": "México"
+    }
 },
 {
-  "model": "Comunidad.pais",
-  "pk": "54",
-  "fields": {
-    "nombre_pais": "Argentina"
-  }
+    "model": "Comunidad.pais",
+    "pk": "54",
+    "fields": {
+        "nombre_pais": "Argentina"
+    }
 },
 {
-  "model": "Comunidad.pais",
-  "pk": "55",
-  "fields": {
-    "nombre_pais": "Brasil"
-  }
+    "model": "Comunidad.pais",
+    "pk": "55",
+    "fields": {
+        "nombre_pais": "Brasil"
+    }
 },
 {
-  "model": "Comunidad.pais",
-  "pk": "56",
-  "fields": {
-    "nombre_pais": "Chile"
-  }
+    "model": "Comunidad.pais",
+    "pk": "56",
+    "fields": {
+        "nombre_pais": "Chile"
+    }
 },
 {
-  "model": "Comunidad.pais",
-  "pk": "57",
-  "fields": {
-    "nombre_pais": "Colombia"
-  }
+    "model": "Comunidad.pais",
+    "pk": "57",
+    "fields": {
+        "nombre_pais": "Colombia"
+    }
 },
 {
-  "model": "Comunidad.pais",
-  "pk": "59",
-  "fields": {
-    "nombre_pais": "Ecuador"
-  }
+    "model": "Comunidad.pais",
+    "pk": "59",
+    "fields": {
+        "nombre_pais": "Ecuador"
+    }
 },
 {
-  "model": "Comunidad.pais",
-  "pk": "91",
-  "fields": {
-    "nombre_pais": "Bolivia"
-  }
+    "model": "Comunidad.pais",
+    "pk": "91",
+    "fields": {
+        "nombre_pais": "Bolivia"
+    }
 },
 {
-  "model": "Comunidad.categoriainiciativa",
-  "pk": "1",
-  "fields": {
-    "nombre_categoria": "Clubes de Programación",
-    "descripcion_categoria": "Espacios extracurriculares gratuitos para chicas que desean aprender sobre videojuegos, apps móviles"
-  }
+    "model": "Comunidad.categoriainiciativa",
+    "pk": "1",
+    "fields": {
+        "nombre_categoria": "Clubes de Programación",
+        "descripcion_categoria": "Espacios extracurriculares gratuitos para chicas que desean aprender sobre videojuegos, apps móviles"
+    }
 },
 {
-  "model": "Comunidad.categoriainiciativa",
-  "pk": "2",
-  "fields": {
-    "nombre_categoria": "Talleres/Hackatones",
-    "descripcion_categoria": "Competencias de resolución de problemas tecnológicos"
-  }
+    "model": "Comunidad.categoriainiciativa",
+    "pk": "2",
+    "fields": {
+        "nombre_categoria": "Talleres/Hackatones",
+        "descripcion_categoria": "Competencias de resolución de problemas tecnológicos"
+    }
 },
 {
-  "model": "Comunidad.categoriainiciativa",
-  "pk": "3",
-  "fields": {
-    "nombre_categoria": "Grupos de Estudio",
-    "descripcion_categoria": "Espacios para adquirir habilidades adicionales a las vistas en clases(lenguajes de programación,BD)"
-  }
+    "model": "Comunidad.categoriainiciativa",
+    "pk": "3",
+    "fields": {
+        "nombre_categoria": "Grupos de Estudio",
+        "descripcion_categoria": "Espacios para adquirir habilidades adicionales a las vistas en clases(lenguajes de programación,BD)"
+    }
 },
 {
-  "model": "Comunidad.categoriainiciativa",
-  "pk": "4",
-  "fields": {
-    "nombre_categoria": "Networking",
-    "descripcion_categoria": "Agrupaciones que organicen encuentros y talleres técnicos con profesionales de la industria"
-  }
+    "model": "Comunidad.categoriainiciativa",
+    "pk": "4",
+    "fields": {
+        "nombre_categoria": "Networking",
+        "descripcion_categoria": "Agrupaciones que organicen encuentros y talleres técnicos con profesionales de la industria"
+    }
 },
 {
-  "model": "Comunidad.categoriainiciativa",
-  "pk": "5",
-  "fields": {
-    "nombre_categoria": "Campamentos de Verano",
-    "descripcion_categoria": "Programas intensivos en vacaciones para explorar IA, ciberseguridad, etc"
-  }
+    "model": "Comunidad.categoriainiciativa",
+    "pk": "5",
+    "fields": {
+        "nombre_categoria": "Campamentos de Verano",
+        "descripcion_categoria": "Programas intensivos en vacaciones para explorar IA, ciberseguridad, etc"
+    }
 },
 {
-  "model": "Comunidad.categoriainiciativa",
-  "pk": "6",
-  "fields": {
-    "nombre_categoria": "Bootcamps",
-    "descripcion_categoria": "Programas de corta duración para fortalecer competencias y tasa de empleabilidad"
-  }
+    "model": "Comunidad.categoriainiciativa",
+    "pk": "6",
+    "fields": {
+        "nombre_categoria": "Bootcamps",
+        "descripcion_categoria": "Programas de corta duración para fortalecer competencias y tasa de empleabilidad"
+    }
 },
 {
-  "model": "Comunidad.miembro",
-  "pk": "148",
-  "fields": {
-    "nombre_miembro": "Gloria Lopera",
-    "ocupacion_cargo_miembro": "Docente",
-    "info_miembro": "Gloria es docente de la UDEA y lidera la iniciativa CodeWoman",
-    "foto_miembro": "miembros/gloria_lopera_RHBWrHv.png",
-    "correo_miembro": "glorlop148@gmail.com"
-  }
+    "model": "Comunidad.miembro",
+    "pk": "148",
+    "fields": {
+        "nombre_miembro": "Gloria Lopera",
+        "ocupacion_cargo_miembro": "Docente",
+        "info_miembro": "Gloria es docente de la UDEA y lidera la iniciativa CodeWoman",
+        "foto_miembro": "miembros/gloria_lopera_RHBWrHv.png",
+        "correo_miembro": "glorlop148@gmail.com"
+    }
 },
 {
-  "model": "Comunidad.miembro",
-  "pk": "237",
-  "fields": {
-    "nombre_miembro": "Lucía Palacio",
-    "ocupacion_cargo_miembro": "Estudiante",
-    "info_miembro": "Lucía es estudiante de 10° semestre de la carrera de Ingeniería Informática de la Universidad Nacional. Pertenece a la iniciativa IAFEM",
-    "foto_miembro": "miembros/lucia_palacio_pbWhgwQ.png",
-    "correo_miembro": "lucpal237@gmail.com"
-  }
+    "model": "Comunidad.miembro",
+    "pk": "237",
+    "fields": {
+        "nombre_miembro": "Luc�a Palacio",
+        "ocupacion_cargo_miembro": "Estudiante",
+        "info_miembro": "Luc�a es estudiante de 10� semestre de la carrera de Ingenier�a Inform�tica de la Universidad Nacional. Pertenece a la iniciativa IAFEM",
+        "foto_miembro": "miembros/lucia_palacio_pbWhgwQ.png",
+        "correo_miembro": "lucpal237@gmail.com"
+    }
 },
 {
-  "model": "Comunidad.miembro",
-  "pk": "382",
-  "fields": {
-    "nombre_miembro": "Alejandra Ospina",
-    "ocupacion_cargo_miembro": "Patrocinadora",
-    "info_miembro": "Alejandra lleva 5 años dirigiendo su propia empresa y brindando apoyo económico a la Sociedad Colombiana de Computación",
-    "foto_miembro": "miembros/alejandra_ospina_FjfpqCV.png",
-    "correo_miembro": "aleja382@gmail.com"
-  }
+    "model": "Comunidad.miembro",
+    "pk": "382",
+    "fields": {
+        "nombre_miembro": "Alejandra Ospina",
+        "ocupacion_cargo_miembro": "Patrocinadora",
+        "info_miembro": "Alejandra lleva 5 a�os dirigiendo su propia empresa y brindando apoyo econ�mico a la Sociedad Colombiana de Computaci�n",
+        "foto_miembro": "miembros/alejandra_ospina_FjfpqCV.png",
+        "correo_miembro": "aleja382@gmail.com"
+    }
 },
 {
-  "model": "Comunidad.miembro",
-  "pk": "460",
-  "fields": {
-    "nombre_miembro": "Paulina Sepúlveda",
-    "ocupacion_cargo_miembro": "Co-Organizadora",
-    "info_miembro": "Paulina ha hecho parte del evento 20CCC y de todas sus versiones anteriores desempeñando funciones de gestión y alianzas",
-    "foto_miembro": "miembros/paulina_sepulveda_lsTyDAA.png",
-    "correo_miembro": "pausep460@gmail.com"
-  }
+    "model": "Comunidad.miembro",
+    "pk": "460",
+    "fields": {
+        "nombre_miembro": "Paulina Sep�lveda",
+        "ocupacion_cargo_miembro": "Co-Organizadora",
+        "info_miembro": "Paulina ha hecho parte del evento 20CCC y de todas sus versiones anteriores desempe�ando funciones de gesti�n y alianzas",
+        "foto_miembro": "miembros/paulina_sepulveda_lsTyDAA.png",
+        "correo_miembro": "pausep460@gmail.com"
+    }
 },
 {
-  "model": "Comunidad.miembro",
-  "pk": "587",
-  "fields": {
-    "nombre_miembro": "Ana Rojas",
-    "ocupacion_cargo_miembro": "Directora",
-    "info_miembro": "Ana es directora del evento Ellas Transforman, que surgió del POLI",
-    "foto_miembro": "miembros/ana_rojas_xlvPSFc.png",
-    "correo_miembro": "anaro587@gmail.com"
-  }
+    "model": "Comunidad.miembro",
+    "pk": "587",
+    "fields": {
+        "nombre_miembro": "Ana Rojas",
+        "ocupacion_cargo_miembro": "Directora",
+        "info_miembro": "Ana es directora del evento Ellas Transforman, que surgi� del POLI",
+        "foto_miembro": "miembros/ana_rojas_xlvPSFc.png",
+        "correo_miembro": "anaro587@gmail.com"
+    }
 },
 {
-  "model": "Comunidad.miembro",
-  "pk": "668",
-  "fields": {
-    "nombre_miembro": "Alicia Vasquez",
-    "ocupacion_cargo_miembro": "Ponente",
-    "info_miembro": "Joven de 20 años que ha realizado diversas ponencias en base a su programa académico Ingeniería de software. Hace parte del grupo de estudio Softgirls de la IU Pascual Bravo",
-    "foto_miembro": "miembros/alicia_vasquez_FAj6qVI.jpg",
-    "correo_miembro": "alicvas668@gmail.com"
-  }
+    "model": "Comunidad.miembro",
+    "pk": "668",
+    "fields": {
+        "nombre_miembro": "Alicia Vasquez",
+        "ocupacion_cargo_miembro": "Ponente",
+        "info_miembro": "Joven de 20 a�os que ha realizado diversas ponencias en base a su programa acad�mico Ingenier�a de software. Hace parte del grupo de estudio Softgirls de la IU Pascual Bravo",
+        "foto_miembro": "miembros/alicia_vasquez_FAj6qVI.jpg",
+        "correo_miembro": "alicvas668@gmail.com"
+    }
 },
 {
-  "model": "Comunidad.miembro",
-  "pk": "861",
-  "fields": {
-    "nombre_miembro": "Dana Garc�s",
-    "ocupacion_cargo_miembro": "Estudiante",
-    "info_miembro": "Dana, es una estudiante de 7� semestre de la carrera de Ingenier�a de Sistemas de la Universidad de Medell�n. Hace parte del grupo JUMI",
-    "foto_miembro": "miembros/dana_garces_ELvNKUe.png",
-    "correo_miembro": "dangar861@gmail.com"
-  }
+    "model": "Comunidad.miembro",
+    "pk": "861",
+    "fields": {
+        "nombre_miembro": "Dana Garc�s",
+        "ocupacion_cargo_miembro": "Estudiante",
+        "info_miembro": "Dana, es una estudiante de 7� semestre de la carrera de Ingenier�a de Sistemas de la Universidad de Medell�n. Hace parte del grupo JUMI",
+        "foto_miembro": "miembros/dana_garces_ELvNKUe.png",
+        "correo_miembro": "dangar861@gmail.com"
+    }
 },
 {
-  "model": "Comunidad.miembro",
-  "pk": "148",
-  "fields": {
-    "nombre_miembro": "Gloria Lopera",
-    "ocupacion_cargo_miembro": "Docente",
-    "info_miembro": "Gloria es docente de la UDEA y lidera la iniciativa CodeWoman",
-    "foto_miembro": "miembros/gloria_lopera_RHBWrHv.png",
-    "correo_miembro": "glorlop148@gmail.com"
-  }
+    "model": "Comunidad.miembro",
+    "pk": "985",
+    "fields": {
+        "nombre_miembro": "Violeta Parra",
+        "ocupacion_cargo_miembro": "Estudiante",
+        "info_miembro": "Estudiante de la IU Pascual Bravo, actualmente está en 5° semestre del Programa Tecnología en Desarrollo de Software",
+        "foto_miembro": "miembros/violeta_parra_t2cSQfa.jpg",
+        "correo_miembro": "violta985@gmail.com"
+    }
 },
 {
-  "model": "Comunidad.miembro",
-  "pk": "237",
-  "fields": {
-    "nombre_miembro": "Luc�a Palacio",
-    "ocupacion_cargo_miembro": "Estudiante",
-    "info_miembro": "Luc�a es estudiante de 10� semestre de la carrera de Ingenier�a Inform�tica de la Universidad Nacional. Pertenece a la iniciativa IAFEM",
-    "foto_miembro": "miembros/lucia_palacio_pbWhgwQ.png",
-    "correo_miembro": "lucpal237@gmail.com"
-  }
+    "model": "Comunidad.ciudad",
+    "pk": "11",
+    "fields": {
+        "nombre_ciudad": "Buenos Aires",
+        "id_pais": "54"
+    }
 },
 {
-  "model": "Comunidad.miembro",
-  "pk": "382",
-  "fields": {
-    "nombre_miembro": "Alejandra Ospina",
-    "ocupacion_cargo_miembro": "Patrocinadora",
-    "info_miembro": "Alejandra lleva 5 a�os dirigiendo su propia empresa y brindando apoyo econ�mico a la Sociedad Colombiana de Computaci�n",
-    "foto_miembro": "miembros/alejandra_ospina_FjfpqCV.png",
-    "correo_miembro": "aleja382@gmail.com"
-  }
+    "model": "Comunidad.ciudad",
+    "pk": "2",
+    "fields": {
+        "nombre_ciudad": "La Paz",
+        "id_pais": "91"
+    }
 },
 {
-  "model": "Comunidad.miembro",
-  "pk": "460",
-  "fields": {
-    "nombre_miembro": "Paulina Sep�lveda",
-    "ocupacion_cargo_miembro": "Co-Organizadora",
-    "info_miembro": "Paulina ha hecho parte del evento 20CCC y de todas sus versiones anteriores desempe�ando funciones de gesti�n y alianzas",
-    "foto_miembro": "miembros/paulina_sepulveda_lsTyDAA.png",
-    "correo_miembro": "pausep460@gmail.com"
-  }
+    "model": "Comunidad.ciudad",
+    "pk": "202",
+    "fields": {
+        "nombre_ciudad": "Washington",
+        "id_pais": "1"
+    }
 },
 {
-  "model": "Comunidad.miembro",
-  "pk": "587",
-  "fields": {
-    "nombre_miembro": "Ana Rojas",
-    "ocupacion_cargo_miembro": "Directora",
-    "info_miembro": "Ana es directora del evento Ellas Transforman, que surgi� del POLI",
-    "foto_miembro": "miembros/ana_rojas_xlvPSFc.png",
-    "correo_miembro": "anaro587@gmail.com"
-  }
+    "model": "Comunidad.ciudad",
+    "pk": "511",
+    "fields": {
+        "nombre_ciudad": "Lima",
+        "id_pais": "51"
+    }
 },
 {
-  "model": "Comunidad.miembro",
-  "pk": "668",
-  "fields": {
-    "nombre_miembro": "Alicia Vasquez",
-    "ocupacion_cargo_miembro": "Ponente",
-    "info_miembro": "Joven de 20 a�os que ha realizado diversas ponencias en base a su programa acad�mico Ingenier�a de software. Hace parte del grupo de estudio Softgirls de la IU Pascual Bravo",
-    "foto_miembro": "miembros/alicia_vasquez_FAj6qVI.jpg",
-    "correo_miembro": "alicvas668@gmail.com"
-  }
+    "model": "Comunidad.ciudad",
+    "pk": "52",
+    "fields": {
+        "nombre_ciudad": "Santiago de Chile",
+        "id_pais": "56"
+    }
 },
 {
-  "model": "Comunidad.miembro",
-  "pk": "861",
-  "fields": {
-    "nombre_miembro": "Dana Garcés",
-    "ocupacion_cargo_miembro": "Estudiante",
-    "info_miembro": "Dana, es una estudiante de 7° semestre de la carrera de Ingeniería de Sistemas de la Universidad de Medellín. Hace parte del grupo JUMI",
-    "foto_miembro": "miembros/dana_garces_ELvNKUe.png",
-    "correo_miembro": "dangar861@gmail.com"
-  }
+    "model": "Comunidad.ciudad",
+    "pk": "55",
+    "fields": {
+        "nombre_ciudad": "Ciudad de Mexico",
+        "id_pais": "52"
+    }
 },
 {
-  "model": "Comunidad.miembro",
-  "pk": "985",
-  "fields": {
-    "nombre_miembro": "Violeta Parra",
-    "ocupacion_cargo_miembro": "Estudiante",
-    "info_miembro": "Estudiante de la IU Pascual Bravo, actualmente está en 5° semestre del Programa Tecnología en Desarrollo de Software. Hace parte de la iniciativa Softgirls",
-    "foto_miembro": "miembros/violeta_parra_t2cSQfa.jpg",
-    "correo_miembro": "violta985@gmail.com"
-  }
+    "model": "Comunidad.ciudad",
+    "pk": "604",
+    "fields": {
+        "nombre_ciudad": "Medell�n",
+        "id_pais": "57"
+    }
 },
 {
-  "model": "Comunidad.ciudad",
-  "pk": "11",
-  "fields": {
-    "nombre_ciudad": "Buenos Aires",
-    "id_pais": "54"
-  }
+    "model": "Comunidad.ciudad",
+    "pk": "61",
+    "fields": {
+        "nombre_ciudad": "Brasilia",
+        "id_pais": "55"
+    }
 },
 {
-  "model": "Comunidad.ciudad",
-  "pk": "2",
-  "fields": {
-    "nombre_ciudad": "La Paz",
-    "id_pais": "91"
-  }
+    "model": "Comunidad.ciudad",
+    "pk": "93",
+    "fields": {
+        "nombre_ciudad": "Quito",
+        "id_pais": "59"
+    }
 },
 {
-  "model": "Comunidad.ciudad",
-  "pk": "202",
-  "fields": {
-    "nombre_ciudad": "Washington",
-    "id_pais": "1"
-  }
+    "model": "Comunidad.iniciativa",
+    "pk": "1",
+    "fields": {
+        "nombre_iniciativa": "SoftGirls",
+        "descripcion_iniciativa": "Grupo de estudio de la Instituci�n Universitaria Pascual Bravo, enfocada en mujeres.",
+        "mision_iniciativa": "Ser felices",
+        "vision_iniciativa": "Ser reconocidas en la Universidad, la ciudad y el pa�s.",
+        "fecha_inicio_iniciativa": "2024-08-01",
+        "universidad_origen_iniciativa": "Instituci�n Universitaria Pascual Bravo",
+        "numero_miembros_iniciativa": 30,
+        "logo_iniciativa": "logos_iniciativas/softgirls.jpeg",
+        "sitio_web_iniciativa": "https://pascualbravo.edu.co/#",
+        "email_contacto_iniciativa": "softgirls@pascualbravo.edu.co",
+        "id_categoria": "3"
+    }
 },
 {
-  "model": "Comunidad.ciudad",
-  "pk": "511",
-  "fields": {
-    "nombre_ciudad": "Lima",
-    "id_pais": "51"
-  }
+    "model": "Comunidad.evento",
+    "pk": "1",
+    "fields": {
+        "nombre_evento": "Visita empresarial",
+        "descripcion_evento": "Visita empresarial a Riwi",
+        "fecha_inicio_evento": "2026-11-23T12:00:00Z",
+        "fecha_fin_evento": "2026-11-23T18:00:00Z",
+        "id_ciudad": "604"
+    }
 },
 {
-  "model": "Comunidad.ciudad",
-  "pk": "52",
-  "fields": {
-    "nombre_ciudad": "Santiago de Chile",
-    "id_pais": "56"
-  }
+    "model": "Comunidad.sede",
+    "pk": "1",
+    "fields": {
+        "nombre_sede": "IU Pascual bravo",
+        "link_maps_sede": "https://maps.app.goo.gl/7Dx7P9ARPWEUVG2o6",
+        "telefono_sede": "4480520",
+        "direccion_ubicacion": "Cl. 75 #74d-53, Pilarica, Medell�n, Robledo, Medell�n, Antioquia",
+        "id_iniciativa": "1",
+        "id_ciudad": "604"
+    }
 },
 {
-  "model": "Comunidad.ciudad",
-  "pk": "55",
-  "fields": {
-    "nombre_ciudad": "Ciudad de Mexico",
-    "id_pais": "52"
-  }
+    "model": "Comunidad.redsocial",
+    "pk": "1",
+    "fields": {
+        "plataforma_red_social": "Instagram",
+        "url_red_social": "https://www.instagram.com/iupascualbravo/",
+        "id_iniciativa": "1"
+    }
 },
 {
-  "model": "Comunidad.ciudad",
-  "pk": "604",
-  "fields": {
-    "nombre_ciudad": "Medellín",
-    "id_pais": "57"
-  }
+    "model": "Comunidad.galeriaevento",
+    "pk": "1",
+    "fields": {
+        "imagen_galeria": "galeria/riwi.jpeg",
+        "descripcion_galeria": "SoftGirls explorando el mundo tech con la empresa Riwi 💜",
+        "id_evento": "1"
+    }
 },
 {
-  "model": "Comunidad.ciudad",
-  "pk": "61",
-  "fields": {
-    "nombre_ciudad": "Brasilia",
-    "id_pais": "55"
-  }
+    "model": "Comunidad.miembroiniciativa",
+    "pk": "1",
+    "fields": {
+        "id_miembro": "668",
+        "id_iniciativa": "1"
+    }
 },
 {
-  "model": "Comunidad.ciudad",
-  "pk": "93",
-  "fields": {
-    "nombre_ciudad": "Quito",
-    "id_pais": "59"
-  }
+    "model": "Comunidad.iniciativaevento",
+    "pk": "1",
+    "fields": {
+        "id_iniciativa": "1",
+        "id_evento": "1"
+    }
 },
 {
-  "model": "Comunidad.galeriaevento",
-  "pk": "1",
-  "fields": {
-    "imagen_galeria": "galeria/riwi.jpeg",
-    "descripcion_galeria": "SoftGirls explorando el mundo tech con la empresa Riwi 💜",
-    "id_evento": "1"
-  }
+    "model": "Comunidad.miembroevento",
+    "pk": "1",
+    "fields": {
+        "id_miembro": "985",
+        "id_evento": "1"
+    }
 },
 {
-  "model": "Comunidad.iniciativa",
-  "pk": "1",
-  "fields": {
-    "nombre_iniciativa": "SoftGirls",
-    "descripcion_iniciativa": "Grupo de estudio de la Institución Universitaria Pascual Bravo, enfocada en mujeres.",
-    "mision_iniciativa": "Ser felices",
-    "vision_iniciativa": "Ser reconocidas en la Universidad, la ciudad y el país.",
-    "fecha_inicio_iniciativa": "2024-08-01",
-    "universidad_origen_iniciativa": "Institución Universitaria Pascual Bravo",
-    "numero_miembros_iniciativa": 30,
-    "logo_iniciativa": "logos_iniciativas/softgirls.jpeg",
-    "sitio_web_iniciativa": "https://pascualbravo.edu.co/#",
-    "email_contacto_iniciativa": "softgirls@pascualbravo.edu.co",
-    "id_categoria": "3"
-  }
-},
-{
-  "model": "Comunidad.evento",
-  "pk": "1",
-  "fields": {
-    "nombre_evento": "Visita empresarial",
-    "descripcion_evento": "Visita empresarial a Riwi",
-    "fecha_inicio_evento": "2026-11-23T12:00:00Z",
-    "fecha_fin_evento": "2026-11-23T18:00:00Z",
-    "id_ciudad": "604"
-  }
-},
-{
-  "model": "Comunidad.sede",
-  "pk": "1",
-  "fields": {
-    "nombre_sede": "IU Pascual bravo",
-    "link_maps_sede": "https://maps.app.goo.gl/7Dx7P9ARPWEUVG2o6",
-    "telefono_sede": "4480520",
-    "direccion_ubicacion": "Cl. 75 #74d-53, Pilarica, Medellín, Robledo, Medellín, Antioquia",
-    "id_iniciativa": "1",
-    "id_ciudad": "604"
-  }
-},
-{
-  "model": "Comunidad.redsocial",
-  "pk": "1",
-  "fields": {
-    "plataforma_red_social": "Instagram",
-    "url_red_social": "https://www.instagram.com/iupascualbravo/",
-    "id_iniciativa": "1"
-  }
+    "model": "Comunidad.miembroevento",
+    "pk": "2",
+    "fields": {
+        "id_miembro": "668",
+        "id_evento": "1"
+    }
 }
 ]
