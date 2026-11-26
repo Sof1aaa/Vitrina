@@ -193,3 +193,229 @@ h1 {
     border-color: #be185d !important;
     box-shadow: 0 4px 12px rgba(190, 24, 93, 0.25);
 }
+
+/* =========================================================
+   7. BOTONES PERSONALIZADOS DEL TEMA MORADO
+   ========================================================= */
+.btn-morado {
+    background: linear-gradient(90deg, var(--morado-principal), #7e22ce) !important;
+    color: #ffffff !important;
+    border: none !important;
+    font-weight: 600;
+    border-radius: 0.6rem;
+    padding: 0.5rem 1.2rem;
+    box-shadow: 0 4px 12px rgba(107, 33, 168, 0.25);
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.btn-morado:hover {
+    background: linear-gradient(90deg, var(--morado-oscuro), var(--morado-principal)) !important;
+    color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(107, 33, 168, 0.35);
+}
+
+.btn-morado-suave {
+    background-color: var(--morado-suave) !important;
+    color: var(--morado-principal) !important;
+    border: 1px solid #d8b4fe !important;
+    font-weight: 600;
+    border-radius: 0.6rem;
+    padding: 0.5rem 1.2rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.btn-morado-suave:hover {
+    background-color: #e9d5ff !important;
+    color: var(--morado-oscuro) !important;
+}
+
+/* Botón Ver detalle en las tablas */
+.btn-detalle {
+    background-color: var(--morado-medio) !important;
+    color: #ffffff !important;
+    border: none !important;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+    padding: 0.35rem 0.85rem;
+    margin-right: 0.35rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-detalle:hover {
+    background-color: var(--morado-principal) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.35);
+}
+
+/* =========================================================
+   8. TARJETAS DE FORMULARIOS Y DETALLE (Sin tocar Django)
+   ========================================================= */
+.card-morada {
+    background-color: #ffffff !important;
+    color: var(--texto-oscuro) !important;
+    border: 1px solid var(--morado-borde) !important;
+    border-top: 5px solid var(--morado-principal) !important;
+    border-radius: 1rem !important;
+    box-shadow: 0 10px 25px -5px rgba(88, 28, 135, 0.12) !important;
+    padding: 1.5rem;
+}
+
+/* Estiliza automáticamente lo que genera {{ formulario.as_p }} */
+.form-morado p {
+    margin-bottom: 1.15rem;
+}
+
+.form-morado label {
+    display: block;
+    font-weight: 600;
+    color: var(--morado-oscuro);
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.form-morado input[type="text"],
+.form-morado input[type="number"],
+.form-morado input[type="email"],
+.form-morado input[type="url"],
+.form-morado input[type="date"],
+.form-morado select,
+.form-morado textarea {
+    width: 100%;
+    padding: 0.6rem 0.9rem;
+    background-color: #fcfaff !important;
+    color: var(--texto-oscuro) !important;
+    border: 1.5px solid #d8b4fe !important;
+    border-radius: 0.6rem;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-morado input:focus,
+.form-morado select:focus,
+.form-morado textarea:focus {
+    outline: none;
+    border-color: var(--morado-principal) !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+}
+
+.form-morado textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+/* Input de subir foto */
+.form-morado input[type="file"] {
+    width: 100%;
+    padding: 0.45rem;
+    background-color: var(--morado-fondo) !important;
+    border: 1.5px dashed var(--morado-medio) !important;
+    border-radius: 0.6rem;
+    color: var(--texto-oscuro) !important;
+}
+
+.form-morado input[type="file"]::file-selector-button {
+    background-color: var(--morado-principal);
+    color: #ffffff;
+    border: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 0.45rem;
+    margin-right: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.form-morado input[type="file"]::file-selector-button:hover {
+    background-color: var(--morado-oscuro);
+}
+
+/* Detalles internos en vistas de Ver Detalle */
+.detalle-titulo {
+    color: var(--morado-principal);
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 2px solid var(--morado-suave);
+}
+
+.detalle-item {
+    padding: 0.65rem 0.9rem;
+    background-color: var(--morado-fondo);
+    border-left: 3px solid var(--morado-medio);
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.detalle-item strong {
+    color: var(--morado-oscuro);
+    display: inline-block;
+    min-width: 165px;
+}
+
+.detalle-foto {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--morado-medio);
+    box-shadow: 0 6px 16px rgba(107, 33, 168, 0.2);
+}
+
+/* Botón Editar */
+.btn-editar {
+    background-color: var(--morado-suave) !important;
+    color: var(--morado-principal) !important;
+    border: 1px solid #d8b4fe !important;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+    padding: 0.35rem 0.85rem;
+    margin-right: 0.35rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-editar:hover,
+.btn-editar:focus {
+    background-color: var(--morado-principal) !important;
+    color: #ffffff !important;
+    border-color: var(--morado-principal) !important;
+    box-shadow: 0 4px 12px rgba(107, 33, 168, 0.25) !important;
+}
+
+/* Botón Eliminar */
+.btn-eliminar {
+    background-color: #fdf2f8 !important;
+    color: #be185d !important;
+    border: 1px solid #fbcfe8 !important;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+    padding: 0.35rem 0.85rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-eliminar:hover,
+.btn-eliminar:focus {
+    background-color: #be185d !important;
+    color: #ffffff !important;
+    border-color: #be185d !important;
+    box-shadow: 0 4px 12px rgba(190, 24, 93, 0.25) !important;
+}

@@ -1,0 +1,59 @@
+{% extends 'Components/navbar.html' %}
+
+{% block title %}Detalle del Miembro{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-9">
+
+            <h1 class="mb-4">Detalle del Miembro</h1>
+
+            <div class="card card-morada">
+                <div class="card-body">
+
+                    <div class="d-flex align-items-center gap-3 detalle-titulo">
+                        {% if miembro.foto_miembro %}
+                            <img src="{{ miembro.foto_miembro.url }}" alt="{{ miembro.nombre_miembro }}" class="detalle-foto">
+                        {% endif %}
+                        <div>
+                            <h5 class="mb-1">{{ miembro.nombre_miembro }}</h5>
+                            <span class="badge" style="background-color: var(--morado-suave); color: var(--morado-principal);">
+                                {{ miembro.ocupacion_cargo_miembro }}
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="detalle-item">
+                        <strong>ID:</strong> {{ miembro.id_miembro }}
+                    </div>
+
+                    <div class="detalle-item">
+                        <strong>Nombre:</strong> {{ miembro.nombre_miembro }}
+                    </div>
+
+                    <div class="detalle-item">
+                        <strong>Ocupación/Cargo:</strong> {{ miembro.ocupacion_cargo_miembro }}
+                    </div>
+
+                    <div class="detalle-item">
+                        <strong>Info:</strong> {{ miembro.info_miembro }}
+                    </div>
+
+                    <div class="detalle-item">
+                        <strong>Correo:</strong> {{ miembro.correo_miembro }}
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="{% url 'listado_miembros' %}" class="btn-morado">
+                            Volver al listado
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

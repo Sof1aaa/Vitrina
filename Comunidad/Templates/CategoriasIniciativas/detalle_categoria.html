@@ -1,0 +1,43 @@
+{% extends 'Components/navbar.html' %}
+
+{% block title %}Detalle de la Categoria{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-9">
+
+            <h1 class="mb-4">Detalle de la Categoría</h1>
+
+            <div class="card card-morada">
+                <div class="card-body">
+
+                    <h5 class="detalle-titulo">
+                        {{ categoria.nombre_categoria }}
+                    </h5>
+
+                    <div class="detalle-item">
+                        <strong>ID:</strong> {{ categoria.id_categoria }}
+                    </div>
+
+                    <div class="detalle-item">
+                        <strong>Nombre:</strong> {{ categoria.nombre_categoria }}
+                    </div>
+
+                    <div class="detalle-item">
+                        <strong>Descripción:</strong> {{ categoria.descripcion_categoria }}
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="{% url 'listado_categorias' %}" class="btn-morado">
+                            Volver al listado
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

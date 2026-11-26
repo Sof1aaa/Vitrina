@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from Comunidad.models import Evento, Iniciativa, Pais, CategoriaIniciativa, Miembro, Ciudad, RedSocial, Sede, GaleriaEvento, MiembroIniciativa, IniciativaEvento, MiembroEvento
+from django.shortcuts import render, get_object_or_404, redirect
+from Comunidad.forms import CategoriaForm, MiembroForm
 
 # Create your views here.
 def listadoPaises(request):
@@ -10,9 +12,53 @@ def listadoCategorias(request):
     categorias = CategoriaIniciativa.objects.all() #Select * from 
     return render(request, 'CategoriasIniciativas/listado_categorias.html', {'categorias': categorias})
 
+def detalleCategoria(request, id):
+    categoria = get_object_or_404( CategoriaIniciativa,id_categoria=id)
+    return render(request,'CategoriasIniciativas/detalle_categoria.html',{'categoria': categoria}
+    )
+
+def registrarCategoria(request):
+# Se define la función registrarCategoria(), que recibe el parámetro request.
+# Este contiene la información de la petición HTTP realizada por el usuario.
+
+    if request.method == 'POST':
+        formulario = CategoriaForm(request.POST, request.FILES)
+
+        if formulario.is_valid():
+            formulario.save()
+            return redirect('listado_categorias')
+    else:
+        formulario = CategoriaForm()
+
+    return render(request,'CategoriasIniciativas/registrar_categoria.html',
+        {'formulario': formulario}
+    )
+
 def listadoMiembros(request):
     miembros = Miembro.objects.all() #Select * from
     return render(request, 'Miembros/listado_miembros.html', {'miembros': miembros})
+
+def detalleMiembro(request, id):
+    miembro = get_object_or_404( Miembro,id_miembro=id)
+    return render(request,'Miembros/detalle_miembro.html',{'miembro': miembro}
+    )
+
+def registrarMiembro(request):
+# Se define la función registrarMiembro(), que recibe el parámetro request.
+# Este contiene la información de la petición HTTP realizada por el usuario.
+
+    if request.method == 'POST':
+        formulario = MiembroForm(request.POST, request.FILES)
+
+        if formulario.is_valid():
+            formulario.save()
+            return redirect('listado_miembros')
+    else:
+        formulario = MiembroForm()
+
+    return render(request,'Miembros/registrar_miembro.html',
+        {'formulario': formulario}
+    )
 
 # JOIN ENTRE DOS TABLAS USANDO ORM DJANGO
 def listadoCiudades(request):
