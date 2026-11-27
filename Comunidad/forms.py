@@ -1,5 +1,5 @@
 from django import forms
-from Comunidad.models import CategoriaIniciativa, Miembro
+from Comunidad.models import CategoriaIniciativa, Iniciativa, Miembro
 
 class CategoriaForm(forms.ModelForm):
     class Meta:
@@ -21,3 +21,23 @@ class MiembroForm(forms.ModelForm):
             'foto_miembro',
             'correo_miembro',
         ]
+
+class IniciativaForm(forms.ModelForm):
+    class Meta:
+        model = Iniciativa
+        fields = [
+            'id_categoria',
+            'nombre_iniciativa',
+            'descripcion_iniciativa',
+            'mision_iniciativa',
+            'vision_iniciativa',
+            'fecha_inicio_iniciativa',
+            'universidad_origen_iniciativa',
+            'numero_miembros_iniciativa',
+            'logo_iniciativa',
+            'sitio_web_iniciativa',
+            'email_contacto_iniciativa',
+        ]
+        widgets = {
+            'fecha_inicio_iniciativa': forms.DateInput(attrs={'type': 'date', 'class': 'form-control'}),
+        }

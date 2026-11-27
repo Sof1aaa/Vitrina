@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from Comunidad.models import Evento, Iniciativa, Pais, CategoriaIniciativa, Miembro, Ciudad, RedSocial, Sede, GaleriaEvento, MiembroIniciativa, IniciativaEvento, MiembroEvento
 from django.shortcuts import render, get_object_or_404, redirect
-from Comunidad.forms import CategoriaForm, MiembroForm
+from Comunidad.forms import CategoriaForm, MiembroForm, IniciativaForm
 
 # Create your views here.
 def listadoPaises(request):
@@ -80,6 +80,27 @@ def listadoRedesSociales(request):
 def listadoIniciativas(request):
     iniciativas = Iniciativa.objects.all()
     return render(request, 'Iniciativas/listado_iniciativas.html', {'iniciativas': iniciativas})
+
+def detalleIniciativa(request, id):
+    iniciativa = get_object_or_404(Iniciativa, id_iniciativa=id)
+    return render(request, 'Iniciativas/detalleIniciativa.html', {'iniciativa': iniciativa})
+
+def registrarIniciativa(request):
+# Se define la función registrarIniciativa(), que recibe el parámetro request.
+# Este contiene la información de la petición HTTP realizada por el usuario.
+
+    if request.method == 'POST':
+        formulario = IniciativaForm(request.POST, request.FILES)
+
+        if formulario.is_valid():
+            formulario.save()
+            return redirect('listado_iniciativas')
+    else:
+        formulario = IniciativaForm()
+
+    return render(request,'Iniciativas/registrarIniciativa.html',
+        {'formulario': formulario}
+    )
 
 def listadoGaleriaEvento(request):
     galeria_evento = GaleriaEvento.objects.all()

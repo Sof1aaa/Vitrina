@@ -4,22 +4,23 @@
 
 
 {% block content %}
-<h1>Listado de Iniciativas</h1>
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="mb-0">Listado de Iniciativas</h1>
+    <a href="{% url 'registrarIniciativa' %}" class="btn-morado">
+        <i class="bi bi-plus-circle"></i> Registrar
+    </a>
+</div>
 <table class="table">
     <thead>
         <tr>
             <th scope="col">ID</th>
-            <th scope="col">Categoría</th>
+            <th scope="col">Logo</th>
             <th scope="col">Nombre</th>
-            <th scope="col">Descripción</th>
-            <th scope="col">Misión</th>
-            <th scope="col">Visión</th>
-            <th scope="col">Fecha de Inicio</th>
+            <th scope="col">Categoría</th>
             <th scope="col">Universidad de Origen</th>
             <th scope="col">Miembros</th>
-            <th scope="col">Logo</th>
             <th scope="col">Sitio Web</th>
-            <th scope="col">Email contacto</th>
+            <th scope="col">Acciones</th>
         </tr>
     </thead>
     <tbody>
@@ -27,14 +28,6 @@
 
         <tr>
             <th scope="row">{{i.id_iniciativa}}</th>
-            <td>{{ i.id_categoria.nombre_categoria }}</td>
-            <td>{{i.nombre_iniciativa}}</td>
-            <td>{{i.descripcion_iniciativa}}</td>
-            <td>{{i.mision_iniciativa}}</td>
-            <td>{{i.vision_iniciativa}}</td>
-            <td>{{i.fecha_inicio_iniciativa}}</td>
-            <td>{{i.universidad_origen_iniciativa}}</td>
-            <td>{{i.numero_miembros_iniciativa}}</td>            
             <td>
                 {% if i.logo_iniciativa %}
                     <img src="{{i.logo_iniciativa.url}}" alt="" width="100">
@@ -42,9 +35,15 @@
                     Sin imagen
                 {% endif %}
             </td>
+            <td>{{i.nombre_iniciativa}}</td>
+            <td>{{ i.id_categoria.nombre_categoria }}</td>
+            <td>{{i.universidad_origen_iniciativa}}</td>
+            <td>{{i.numero_miembros_iniciativa}}</td>            
             <td>{{i.sitio_web_iniciativa}}</td>
-            <td>{{i.email_contacto_iniciativa}}</td>
               <td>
+                <a href="{% url 'detalleIniciativa' i.id_iniciativa %}" class="btn-detalle">
+                    Ver detalle
+                </a>
                 <a href="" type="button" class="btn btn-light btn-sm border">Editar</a>
                 <a href="" type="button" class="btn btn-light btn-sm border">Eliminar</a>
             </td>

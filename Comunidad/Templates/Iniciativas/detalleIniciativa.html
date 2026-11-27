@@ -1,0 +1,79 @@
+{% extends 'Components/navbar.html' %}
+
+{% block title %}Detalle de la Iniciativa{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-9">
+
+            <h1 class="mb-4">Detalle de la Iniciativa</h1>
+
+            <div class="card card-morada">
+                <div class="card-body">
+
+                    <div class="d-flex align-items-center gap-3 detalle-titulo">
+                        {% if iniciativa.logo_iniciativa %}
+                            <img src="{{ iniciativa.logo_iniciativa.url }}" alt="{{ iniciativa.nombre_iniciativa }}" class="detalle-foto">
+                        {% endif %}
+                        <div>
+                            <h5 class="mb-1">{{ iniciativa.nombre_iniciativa }}</h5>
+                            <span class="badge" style="background-color: var(--morado-suave); color: var(--morado-principal);">
+                                {{ iniciativa.id_categoria.nombre_categoria }}
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="detalle-item">
+                        <strong>ID:</strong> {{ iniciativa.id_iniciativa }}
+                    </div>
+
+                    <div class="detalle-item">
+                        <strong>Nombre:</strong> {{ iniciativa.nombre_iniciativa }}
+                    </div>
+
+                    <div class="detalle-item">
+                        <strong>Descripción:</strong> {{ iniciativa.descripcion_iniciativa }}
+                    </div>
+
+                    <div class="detalle-item">
+                        <strong>Misión:</strong> {{ iniciativa.mision_iniciativa }}
+                    </div>
+
+                    <div class="detalle-item">
+                        <strong>Visión:</strong> {{ iniciativa.vision_iniciativa }}
+                    </div>
+
+                    <div class="detalle-item">
+                        <strong>Fecha de Inicio:</strong> {{ iniciativa.fecha_inicio_iniciativa }}
+                    </div>
+
+                    <div class="detalle-item">
+                        <strong>Universidad de Origen:</strong> {{ iniciativa.universidad_origen_iniciativa }}
+                    </div>
+
+                    <div class="detalle-item">
+                        <strong>Miembros:</strong> {{ iniciativa.numero_miembros_iniciativa }}
+                    </div>
+
+                    <div class="detalle-item">
+                        <strong>Sitio Web:</strong> {{ iniciativa.sitio_web_iniciativa }}
+                    </div>
+
+                    <div class="detalle-item">
+                        <strong>Email de Contacto:</strong> {{ iniciativa.email_contacto_iniciativa }}
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="{% url 'listado_iniciativas' %}" class="btn-morado">
+                            Volver al listado
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -42,7 +42,7 @@ class Ciudad(models.Model):
 
 
 class Iniciativa(models.Model):
-    id_iniciativa = models.CharField(max_length=10, primary_key=True)
+    id_iniciativa = models.AutoField(primary_key=True)
     nombre_iniciativa = models.CharField(max_length=100)
     descripcion_iniciativa = models.TextField()
     mision_iniciativa = models.TextField()
