@@ -114,7 +114,12 @@
 </style>
 
 <div class="contenedor-galeria">
-    <h1 class="titulo-seccion">Galería de Eventos</h1>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="mb-0">Listado de Galería Eventos</h1>
+    <a href="{% url 'registrarGaleriaEvento' %}" class="btn-morado">
+        <i class="bi bi-plus-circle"></i> Registrar
+    </a>
+</div>
 
     <div class="grid-galeria">
         {% for g in galeria_evento %}

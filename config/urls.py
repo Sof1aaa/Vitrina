@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from Comunidad.views import detalleIniciativa, listadoPaises, listadoCategorias, listadoMiembros, listadoCiudades, listadoSedes, listadoEventos, listadoRedesSociales, listadoIniciativas, listadoGaleriaEvento, listadoMiembroIniciativa, listadoIniciativaEvento, listadoMiembroEvento, registrarCategoria, detalleCategoria, detalleMiembro, registrarMiembro, detalleIniciativa, registrarIniciativa
+from Comunidad.views import detalleIniciativa, listadoPaises, listadoCategorias, listadoMiembros, listadoCiudades, listadoSedes, listadoEventos, listadoRedesSociales, listadoIniciativas, listadoGaleriaEvento, listadoMiembroIniciativa, listadoIniciativaEvento, listadoMiembroEvento, registrarCategoria, detalleCategoria, detalleMiembro, registrarMiembro, detalleIniciativa, registrarIniciativa, registrarGaleriaEvento
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -21,6 +21,7 @@ urlpatterns = [
     path('iniciativas/detalle/<str:id>/', detalleIniciativa, name='detalleIniciativa'),
     path('iniciativas/registrar/', registrarIniciativa, name='registrarIniciativa'),
     path('galeria-eventos/', listadoGaleriaEvento, name='listado_galeria_evento'),
+    path('galeria-eventos/registrar/', registrarGaleriaEvento, name='registrarGaleriaEvento'),
     path('miembros-iniciativas/', listadoMiembroIniciativa, name='listado_miembros_iniciativas'),
     path('iniciativas-eventos/', listadoIniciativaEvento, name='listado_iniciativa_evento'),
     path('miembros-eventos/', listadoMiembroEvento, name='listado_miembro_evento')

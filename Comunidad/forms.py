@@ -1,5 +1,5 @@
 from django import forms
-from Comunidad.models import CategoriaIniciativa, Iniciativa, Miembro
+from Comunidad.models import CategoriaIniciativa, Iniciativa, Miembro, GaleriaEvento
 
 class CategoriaForm(forms.ModelForm):
     class Meta:
@@ -41,3 +41,13 @@ class IniciativaForm(forms.ModelForm):
         widgets = {
             'fecha_inicio_iniciativa': forms.DateInput(attrs={'type': 'date', 'class': 'form-control'}),
         }
+
+class GaleriaEventoForm(forms.ModelForm):
+    class Meta:
+        model = GaleriaEvento
+        fields = [
+            'id_galeria',
+            'imagen_galeria',
+            'descripcion_galeria',
+            'id_evento'
+        ]
